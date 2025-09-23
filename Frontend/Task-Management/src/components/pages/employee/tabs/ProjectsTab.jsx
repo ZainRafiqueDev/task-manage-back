@@ -1,6 +1,6 @@
 // src/components/employee/tabs/ProjectsTab.jsx
 import React, { useEffect, useState } from "react";
-import { getEmployeeProjects } from "../../../../utils/ProjectApi";
+import { getEmployeeProjects } from "../../../../services/ProjectApi";
 
 const ProjectsTab = () => {
   const [projects, setProjects] = useState([]);

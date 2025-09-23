@@ -1488,96 +1488,13 @@ export const recalculateProject = async (req, res) => {
  * @route GET /api/projects/my-projects
  * @access Private
  */
-export const getMyProjects = async (req, res) => {
-  try {
-    let projects;
 
-    if (req.user.role === "teamlead") {
-      projects = await Project.find({ 
-        teamLead: req.user._id,
-        visibleToTeamLeads: true
-      })
-      .populate("teamLead", "name email")
-      .populate("employees", "name email")
-      .populate("createdBy", "name email");
-    } else if (req.user.role === "employee") {
-      // Projects where the employee is assigned
-      projects = await Project.find({ employees: req.user._id })
-        .populate("teamLead", "name email")
-        .populate("employees", "name email")
-        .populate("createdBy", "name email");
-    } else {
-      // Admin sees all projects
-      projects = await Project.find()
-        .populate("teamLead", "name email")
-        .populate("employees", "name email")
-        .populate("createdBy", "name email");
-    }
-
-    if (!projects || projects.length === 0) {
-      return res.status(404).json({ 
-        success: false, 
-        message: "No projects found" 
-      });
-    }
-
-    res.status(200).json({ 
-      success: true, 
-      count: projects.length, 
-      projects 
-    });
-  } catch (error) {
-    console.error("Get my projects error:", error);
-    res.status(500).json({ 
-      success: false, 
-      message: "Error fetching projects", 
-      error: error.message 
-    });
-  }
-};
 
 /**
  * @desc Teamlead picks a project
  * @route PUT /api/projects/:projectId/pick
  * @access Teamlead
  */
-export const pickProject = async (req, res) => {
-  try {
-    const { projectId } = req.params;
-
-    // Find the project and ensure it's visible to teamleads and unassigned
-    const project = await Project.findOne({
-      _id: projectId,
-      visibleToTeamLeads: true,
-      teamLead: null
-    });
-
-    if (!project) {
-      return res.status(404).json({
-        success: false,
-        message: "Project not found, already picked, or not available for team leads"
-      });
-    }
-
-    // Assign the logged-in teamlead as the project lead
-    project.teamLead = req.user._id;
-
-    await project.save();
-
-    res.status(200).json({
-      success: true,
-      message: "Project successfully picked",
-      project
-    });
-  } catch (error) {
-    console.error("Pick project error:", error);
-    res.status(500).json({ 
-      success: false, 
-      message: "Error picking project", 
-      error: error.message 
-    });
-  }
-};
 
 /**
  * @desc Get projects assigned to the logged-in employee by their teamlead
@@ -1619,6 +1536,305 @@ export const getAssignedProjects = async (req, res) => {
     res.status(500).json({ 
       success: false, 
       message: "Error fetching assigned projects", 
+      error: error.message 
+    });
+  }
+};
+
+
+/**
+ * @desc Teamlead picks/claims a project
+ * @route PUT /api/teamlead/projects/:projectId/pick
+ * @access Teamlead only
+ */
+export const pickProject = async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const teamLeadId = req.user._id;
+
+    // Validation
+    if (!projectId) {
+      return res.status(400).json({
+        success: false,
+        message: "Project ID is required"
+      });
+    }
+
+    // Find the project with detailed validation
+    const project = await Project.findById(projectId)
+      .populate("teamLead", "name email")
+      .populate("createdBy", "name email");
+
+    if (!project) {
+      return res.status(404).json({
+        success: false,
+        message: "Project not found"
+      });
+    }
+
+    // Check if project is available for teamleads to pick
+    if (!project.visibleToTeamLeads) {
+      return res.status(403).json({
+        success: false,
+        message: "This project is not available for team leads to pick"
+      });
+    }
+
+    // Check if project already has a teamlead assigned
+    if (project.teamLead) {
+      return res.status(400).json({
+        success: false,
+        message: `This project is already assigned to ${project.teamLead.name}`
+      });
+    }
+
+    // Check if the project is in a valid status to be picked
+    const validStatuses = ["pending", "active", "in-progress"];
+    if (!validStatuses.includes(project.status)) {
+      return res.status(400).json({
+        success: false,
+        message: `Cannot pick projects with status: ${project.status}`
+      });
+    }
+
+    // Check if teamlead hasn't exceeded project limit (optional business rule)
+    const currentTeamLeadProjects = await Project.countDocuments({ 
+      teamLead: teamLeadId,
+      status: { $in: ["pending", "active", "in-progress"] }
+    });
+
+    const MAX_CONCURRENT_PROJECTS = 5; // You can adjust this limit
+    if (currentTeamLeadProjects >= MAX_CONCURRENT_PROJECTS) {
+      return res.status(400).json({
+        success: false,
+        message: `You have reached the maximum limit of ${MAX_CONCURRENT_PROJECTS} concurrent projects`
+      });
+    }
+
+    // Assign the teamlead to the project
+    project.teamLead = teamLeadId;
+    
+    // Update project status if it's pending
+    if (project.status === "pending") {
+      project.status = "in-progress";
+    }
+
+    // Update the updatedBy field
+    project.updatedBy = teamLeadId;
+
+    await project.save();
+
+    // Populate the updated project for response
+    const updatedProject = await Project.findById(projectId)
+      .populate("teamLead", "name email role")
+      .populate("employees", "name email role")
+      .populate("createdBy", "name email role");
+
+    res.status(200).json({
+      success: true,
+      message: "Project picked successfully",
+      project: updatedProject,
+      teamLead: {
+        id: req.user._id,
+        name: req.user.name,
+        email: req.user.email
+      }
+    });
+
+  } catch (error) {
+    console.error("Pick project error:", error);
+    res.status(500).json({ 
+      success: false, 
+      message: "Error picking project", 
+      error: error.message 
+    });
+  }
+};
+
+/**
+ * @desc Get all projects available for teamleads to pick
+ * @route GET /api/teamlead/projects/available
+ * @access Teamlead only
+ */
+export const getAvailableProjects = async (req, res) => {
+  try {
+    const { status, priority, category, search } = req.query;
+
+    // Build query for available projects
+    let query = {
+      visibleToTeamLeads: true,
+      teamLead: null, // No teamlead assigned yet
+      status: { $in: ["pending", "active", "in-progress"] } // Only active statuses
+    };
+
+    // Add filters if provided
+    if (status && status !== 'all') {
+      query.status = status;
+    }
+
+    if (priority && priority !== 'all') {
+      query.priority = priority;
+    }
+
+    if (category && category !== 'all') {
+      query.category = category;
+    }
+
+    if (search) {
+      query.$or = [
+        { projectName: { $regex: search, $options: 'i' } },
+        { clientName: { $regex: search, $options: 'i' } },
+        { description: { $regex: search, $options: 'i' } }
+      ];
+    }
+
+    const projects = await Project.find(query)
+      .populate("createdBy", "name email")
+      .select("-paidAmount -pendingAmount -totalAmount -fixedAmount -hourlyRate -payments") // Hide sensitive financial data
+      .sort({ createdAt: -1, priority: 1 });
+
+    res.status(200).json({ 
+      success: true, 
+      count: projects.length,
+      projects 
+    });
+
+  } catch (error) {
+    console.error("Get available projects error:", error);
+    res.status(500).json({ 
+      success: false, 
+      message: "Error fetching available projects", 
+      error: error.message 
+    });
+  }
+};
+
+/**
+ * @desc Get projects assigned to the logged-in teamlead
+ * @route GET /api/teamlead/projects/mine
+ * @access Teamlead only
+ */
+export const getMyProjects = async (req, res) => {
+  try {
+    const teamLeadId = req.user._id;
+    const { status, priority, category } = req.query;
+
+    // Build query for teamlead's projects
+    let query = { teamLead: teamLeadId };
+
+    // Add filters if provided
+    if (status && status !== 'all') {
+      query.status = status;
+    }
+
+    if (priority && priority !== 'all') {
+      query.priority = priority;
+    }
+
+    if (category && category !== 'all') {
+      query.category = category;
+    }
+
+    const projects = await Project.find(query)
+      .populate("employees", "name email role")
+      .populate("createdBy", "name email")
+      .select("-paidAmount -pendingAmount -totalAmount -fixedAmount -hourlyRate -payments") // Hide sensitive financial data
+      .sort({ updatedAt: -1 });
+
+    // Calculate some basic stats for teamlead
+    const stats = {
+      total: projects.length,
+      pending: projects.filter(p => p.status === 'pending').length,
+      inProgress: projects.filter(p => p.status === 'in-progress').length,
+      completed: projects.filter(p => p.status === 'completed').length,
+      onHold: projects.filter(p => p.status === 'on-hold').length
+    };
+
+    res.status(200).json({ 
+      success: true, 
+      count: projects.length,
+      stats,
+      projects 
+    });
+
+  } catch (error) {
+    console.error("Get my projects error:", error);
+    res.status(500).json({ 
+      success: false, 
+      message: "Error fetching your projects", 
+      error: error.message 
+    });
+  }
+};
+
+/**
+ * @desc Release/Unassign a project (teamlead gives up project)
+ * @route PUT /api/teamlead/projects/:projectId/release
+ * @access Teamlead only
+ */
+export const releaseProject = async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const teamLeadId = req.user._id;
+    const { reason } = req.body;
+
+    // Find the project
+    const project = await Project.findById(projectId);
+
+    if (!project) {
+      return res.status(404).json({
+        success: false,
+        message: "Project not found"
+      });
+    }
+
+    // Check if this teamlead owns the project
+    if (!project.teamLead || project.teamLead.toString() !== teamLeadId.toString()) {
+      return res.status(403).json({
+        success: false,
+        message: "You can only release projects assigned to you"
+      });
+    }
+
+    // Check if project can be released (not completed/cancelled)
+    if (["completed", "cancelled"].includes(project.status)) {
+      return res.status(400).json({
+        success: false,
+        message: "Cannot release completed or cancelled projects"
+      });
+    }
+
+    // Release the project
+    project.teamLead = null;
+    project.status = "pending"; // Reset to pending for other teamleads to pick
+    project.updatedBy = teamLeadId;
+
+    // Clear assigned employees since teamlead is releasing
+    project.employees = [];
+
+    // Add a note about the release (if you have a notes/history field)
+    if (reason) {
+      // You could add this to a project history/notes field if you have one
+      console.log(`Project ${projectId} released by teamlead ${teamLeadId}. Reason: ${reason}`);
+    }
+
+    await project.save();
+
+    res.status(200).json({
+      success: true,
+      message: "Project released successfully. It's now available for other team leads to pick.",
+      project: {
+        id: project._id,
+        projectName: project.projectName,
+        status: project.status
+      }
+    });
+
+  } catch (error) {
+    console.error("Release project error:", error);
+    res.status(500).json({ 
+      success: false, 
+      message: "Error releasing project", 
       error: error.message 
     });
   }

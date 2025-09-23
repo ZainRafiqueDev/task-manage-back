@@ -48,7 +48,7 @@ export const deleteUser = async (req, res) => {
     const deleted = await User.findByIdAndDelete(req.params.id);
     if (!deleted) return res.status(404).json({ message: "User not found" });
 
-    // Optionally remove assigned assets
+    // Remove assigned assets
     await Asset.updateMany({ assignedTo: deleted._id }, { $unset: { assignedTo: "" } });
 
     res.json({ message: "User deleted successfully" });
@@ -56,8 +56,9 @@ export const deleteUser = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
 // Assign employees to a team (Teamlead only)
-export const assignTeam  = async (req, res) => {
+export const assignTeam = async (req, res) => {
   try {
     // Only teamlead can assign their team
     if (req.user.role !== "teamlead") {
@@ -77,10 +78,10 @@ export const assignTeam  = async (req, res) => {
     }
 
     // Assign each employee to this teamlead
-    for (let emp of employees) {
-      emp.teamLead = req.user._id;
-      await emp.save();
-    }
+    await User.updateMany(
+      { _id: { $in: employeeIds } },
+      { teamLead: req.user._id }
+    );
 
     res.status(200).json({
       success: true,
@@ -93,6 +94,34 @@ export const assignTeam  = async (req, res) => {
   }
 };
 
+// Remove employees from team (Teamlead only)
+export const removeFromTeam = async (req, res) => {
+  try {
+    if (req.user.role !== "teamlead") {
+      return res.status(403).json({ success: false, message: "Not authorized" });
+    }
+
+    const { employeeIds } = req.body;
+
+    if (!employeeIds || !Array.isArray(employeeIds) || employeeIds.length === 0) {
+      return res.status(400).json({ success: false, message: "Provide employee IDs to remove" });
+    }
+
+    // Remove teamlead assignment
+    await User.updateMany(
+      { _id: { $in: employeeIds }, teamLead: req.user._id },
+      { $unset: { teamLead: "" } }
+    );
+
+    res.status(200).json({
+      success: true,
+      message: `Removed ${employeeIds.length} employees from your team`,
+    });
+  } catch (err) {
+    console.error("RemoveFromTeam Error:", err);
+    res.status(500).json({ success: false, message: "Error removing from team", error: err.message });
+  }
+};
 
 // Promote user to team lead (admin only)
 export const promoteUser = async (req, res) => {
@@ -114,14 +143,35 @@ export const promoteUser = async (req, res) => {
 export const getEmployees = async (req, res) => {
   try {
     const employees = await User.find({ role: "employee" }).select("-password");
-    res.json(employees);
+    res.json({ success: true, employees });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 };
-/* ----------------------- USER MANAGEMENT ----------------------- */
 
-// Get all users (admin sees all, teamlead sees only employees)
+// Get teamlead's assigned employees
+export const getMyTeam = async (req, res) => {
+  try {
+    if (req.user.role !== "teamlead") {
+      return res.status(403).json({ success: false, message: "Not authorized" });
+    }
+
+    const teamMembers = await User.find({ 
+      teamLead: req.user._id, 
+      role: "employee" 
+    }).select("-password");
+
+    res.json({
+      success: true,
+      teamMembers,
+      count: teamMembers.length
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
+// Get all users filtered by role
 export const getAllUsersFiltered = async (req, res) => {
   try {
     let users;
@@ -141,4 +191,3 @@ export const getAllUsersFiltered = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
-

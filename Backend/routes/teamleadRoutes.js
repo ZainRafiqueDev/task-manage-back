@@ -3,7 +3,12 @@ import { protect, authorizeRoles } from "../middleware/authMiddleware.js";
 
 
 // Project functions
-import { getMyProjects, pickProject} from "../controllers/ProjectController.js";
+import { 
+  getMyProjects, 
+  pickProject, 
+  getAvailableProjects,
+  releaseProject 
+} from "../controllers/ProjectController.js";
 
 // Team / User functions
 import {getAllUsersFiltered ,  getEmployees , assignTeam} from "../controllers/userController.js";
@@ -23,10 +28,30 @@ const router = express.Router();
 router.use(protect, authorizeRoles("teamlead"));
 
 /* ----------------- PROJECTS ----------------- */
-router.get("/projects", getMyProjects);              // See all available projects
-router.post("/projects/:id/pick", pickProject);           // Claim a project
-router.get("/projects/mine", getMyProjects);             // My projects only
+// Get all available projects that teamleads can pick
+router.get("/projects/available", getAvailableProjects);
 
+// Get projects assigned to the logged-in teamlead
+router.get("/projects/mine", getMyProjects);
+
+// Alternative route for backward compatibility
+router.get("/projects", getAvailableProjects);
+
+// Pick/claim a project
+router.put("/projects/:projectId/pick", pickProject);
+
+// Release a project (give up ownership)
+router.put("/projects/:projectId/release", releaseProject);
+
+/* ----------------- TEAM MEMBERS ----------------- */
+// Get filtered users (teamlead sees only employees)
+router.get("/users", getAllUsersFiltered);
+
+// Get employees list
+router.get("/employees", getEmployees);
+
+// Assign employees to teamlead's team
+router.put("/assign-team", assignTeam);
 /* ----------------- TEAM MEMBERS ----------------- */
 // router.get("/team", getTeamMembers);                     // Get list of employees
 

@@ -26,7 +26,7 @@ import {
   updateProjectGroup,
   deleteProjectGroup,
   recalculateProject,
-} from "../../../../utils/ProjectApi";
+} from "../../../../services/ProjectApi";
 
 const ProjectsTab = () => {
   const [projects, setProjects] = useState([]);

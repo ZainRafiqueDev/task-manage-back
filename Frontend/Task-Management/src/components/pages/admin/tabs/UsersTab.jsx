@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import api from "../../../../utils/api";
+import api from "../../../../services/api";
 
 const UsersTab = () => {
   const [users, setUsers] = useState([]);

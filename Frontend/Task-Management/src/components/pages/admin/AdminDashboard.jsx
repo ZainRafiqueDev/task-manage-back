@@ -8,6 +8,7 @@ import AddonsTab from "./tabs/AddonsTab";
 import PaymentsTab from "./tabs/PaymentsTab";
 import ReportsTab from "./tabs/REportsTab";
 import NotificationsTab from "./tabs/NotifcationTabs";
+import AssetTab from "./tabs/AssetTab";
 
 
 const AdminDashboard = () => {
@@ -23,6 +24,7 @@ const AdminDashboard = () => {
     // payments: <PaymentsTab />,
     reports: <ReportsTab />,
     notifications: <NotificationsTab />,
+    assets: <AssetTab />
   };
 
   return (

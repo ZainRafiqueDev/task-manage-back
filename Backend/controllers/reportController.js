@@ -330,36 +330,51 @@ export const submitDailyReport = async (req, res) => {
  * @route POST /api/reports
  * @access Employee / TeamLead / Admin
  */
+// controllers/reportController.js
+
+/**
+ * @desc Create a new report
+ * @route POST /api/reports
+ * @access Employee, TeamLead, Admin
+ */
 export const createReport = async (req, res) => {
   try {
-    const { type, forUser, content, tasksCompleted, tasksPending, projectStats, parentReport } = req.body;
+    const { type, forUser, content, tasksCompleted, tasksPending, projectStats } = req.body;
 
-    if (!["employee", "teamlead", "admin"].includes(req.user.role)) {
-      return res.status(403).json({ success: false, message: "Not authorized to create reports" });
+    if (!content || !type) {
+      return res.status(400).json({ success: false, message: "Type and content are required" });
     }
 
-    if (!type || !content) {
-      return res.status(400).json({ success: false, message: "Type and content are required" });
+    // If admin is creating for someone else, require forUser
+    if (req.user.role === "admin" && !forUser) {
+      return res.status(400).json({ success: false, message: "Admin must specify forUser" });
     }
 
     const report = await Report.create({
       type,
       createdBy: req.user._id,
-      forUser,
+      forUser: forUser || req.user._id, // employee/teamlead: themselves, admin: can target someone else
       content,
-      tasksCompleted,
-      tasksPending,
-      projectStats,
-      parentReport,
-      status: "draft",
+      tasksCompleted: tasksCompleted || 0,
+      tasksPending: tasksPending || 0,
+      projectStats: projectStats || { done: 0, inProgress: 0, selected: 0 },
     });
 
-    res.status(201).json({ success: true, report });
+    res.status(201).json({
+      success: true,
+      message: "Report created successfully",
+      report,
+    });
   } catch (err) {
     console.error("CreateReport Error:", err);
-    res.status(500).json({ success: false, message: "Error creating report", error: err.message });
+    res.status(500).json({
+      success: false,
+      message: "Failed to create report",
+      error: err.message,
+    });
   }
 };
+
 
 /**
  * @desc Get reports created by logged-in user (Employee/TeamLead/Admin)

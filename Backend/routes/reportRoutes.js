@@ -30,7 +30,9 @@ router.get("/users", authorizeRoles("teamlead", "admin"), getUsersForReports); /
 // Employee & TeamLead
 // ========================
 router.get("/me", getMyReports);                 // Logged-in user's reports
-router.post("/", createReport);                  // Create daily/monthly report
+// Create daily/monthly report (Employee, TeamLead, Admin)
+router.post("/", authorizeRoles("employee", "teamlead", "admin"), createReport);
+              // Create daily/monthly report
 router.put("/:reportId", updateReport);          // Update your own report
 router.delete("/:reportId", deleteReport);       // Delete your own report
 
