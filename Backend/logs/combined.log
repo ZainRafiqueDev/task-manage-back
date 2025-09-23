@@ -1,0 +1,1560 @@
+{"level":"info","message":"Server running in undefined mode on port 5000","service":"task-management-api","timestamp":"2025-09-19T11:39:33.080Z"}
+{"level":"info","message":"Server running in undefined mode on port 5000","service":"task-management-api","timestamp":"2025-09-19T11:46:35.139Z"}
+{"level":"info","message":"Server running in undefined mode on port 5000","service":"task-management-api","timestamp":"2025-09-19T11:51:22.957Z"}
+{"level":"info","message":"Server running in undefined mode on port 5000","service":"task-management-api","timestamp":"2025-09-19T11:51:38.158Z"}
+{"level":"info","message":"Server running in undefined mode on port 5000","service":"task-management-api","timestamp":"2025-09-19T11:51:58.876Z"}
+{"level":"info","message":"Server running in undefined mode on port 5000","service":"task-management-api","timestamp":"2025-09-19T11:52:29.717Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"task-management-api","timestamp":"2025-09-19T12:14:20.331Z"}
+{"level":"info","message":"Server running in undefined mode on port 5000","service":"task-management-api","timestamp":"2025-09-19T12:14:23.614Z"}
+{"level":"info","message":"Server running in undefined mode on port 5000","service":"task-management-api","timestamp":"2025-09-19T13:21:01.160Z"}
+{"level":"info","message":"Server running in undefined mode on port 5000","service":"task-management-api","timestamp":"2025-09-19T14:44:22.056Z"}
+{"level":"info","message":"Server running in undefined mode on port 5000","service":"task-management-api","timestamp":"2025-09-19T14:47:17.650Z"}
+{"level":"info","message":"Server running in undefined mode on port 5000","service":"task-management-api","timestamp":"2025-09-19T14:48:21.182Z"}
+2025-09-19T21:12:53.441Z info: Server running in undefined mode on port 5000
+2025-09-19T21:16:34.436Z info: Server running in undefined mode on port 5000
+2025-09-19T21:17:29.009Z info: Server running in undefined mode on port 5000
+2025-09-21T09:30:58.671Z info: Server running in undefined mode on port 5000
+2025-09-21T09:33:02.741Z info: SIGINT received, shutting down gracefully
+2025-09-21T09:33:08.922Z info: Server running in undefined mode on port 5000
+2025-09-21T09:34:36.052Z info: Server running in undefined mode on port 5000
+2025-09-21T09:34:39.956Z info: ::1 - - [21/Sep/2025:09:34:39 +0000] "POST /api/auth/register HTTP/1.1" 400 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:34:59.731Z info: ::1 - - [21/Sep/2025:09:34:59 +0000] "POST /api/auth/register HTTP/1.1" 201 341 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:29.233Z info: ::1 - - [21/Sep/2025:09:35:29 +0000] "POST /api/auth/login HTTP/1.1" 200 300 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:29.406Z info: ::1 - - [21/Sep/2025:09:35:29 +0000] "GET /api/employee/projects HTTP/1.1" 403 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:29.424Z info: ::1 - - [21/Sep/2025:09:35:29 +0000] "GET /api/employee/projects HTTP/1.1" 403 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:33.354Z info: ::1 - - [21/Sep/2025:09:35:33 +0000] "GET /api/tasks/my HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:33.362Z info: ::1 - - [21/Sep/2025:09:35:33 +0000] "GET /api/tasks/my HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:36.064Z info: ::1 - - [21/Sep/2025:09:35:36 +0000] "GET /api/auth/me HTTP/1.1" 404 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:36.072Z info: ::1 - - [21/Sep/2025:09:35:36 +0000] "GET /api/auth/me HTTP/1.1" 404 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:46.695Z info: ::1 - - [21/Sep/2025:09:35:46 +0000] "POST /api/auth/login HTTP/1.1" 200 300 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:46.854Z info: ::1 - - [21/Sep/2025:09:35:46 +0000] "GET /api/employee/projects HTTP/1.1" 403 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:46.864Z info: ::1 - - [21/Sep/2025:09:35:46 +0000] "GET /api/employee/projects HTTP/1.1" 403 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:52.161Z info: ::1 - - [21/Sep/2025:09:35:52 +0000] "GET /api/tasks/my HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:52.173Z info: ::1 - - [21/Sep/2025:09:35:52 +0000] "GET /api/tasks/my HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:53.948Z info: ::1 - - [21/Sep/2025:09:35:53 +0000] "GET /api/auth/me HTTP/1.1" 404 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:35:53.953Z info: ::1 - - [21/Sep/2025:09:35:53 +0000] "GET /api/auth/me HTTP/1.1" 404 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:42:11.822Z info: Server running in undefined mode on port 5000
+2025-09-21T09:42:41.773Z info: Server running in undefined mode on port 5000
+2025-09-21T09:43:07.294Z info: ::1 - - [21/Sep/2025:09:43:07 +0000] "POST /api/auth/login HTTP/1.1" 200 300 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:43:07.450Z info: ::1 - - [21/Sep/2025:09:43:07 +0000] "GET /api/employee/projects HTTP/1.1" 403 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:43:07.465Z info: ::1 - - [21/Sep/2025:09:43:07 +0000] "GET /api/employee/projects HTTP/1.1" 403 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:43:12.013Z info: ::1 - - [21/Sep/2025:09:43:12 +0000] "GET /api/tasks/my HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:43:12.026Z info: ::1 - - [21/Sep/2025:09:43:12 +0000] "GET /api/tasks/my HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:43:14.772Z info: ::1 - - [21/Sep/2025:09:43:14 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:43:14.780Z info: ::1 - - [21/Sep/2025:09:43:14 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:43:40.106Z info: ::1 - - [21/Sep/2025:09:43:40 +0000] "POST /api/auth/login HTTP/1.1" 401 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:43:47.611Z info: ::1 - - [21/Sep/2025:09:43:47 +0000] "POST /api/auth/login HTTP/1.1" 200 294 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:43:47.794Z info: ::1 - - [21/Sep/2025:09:43:47 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:43:47.809Z info: ::1 - - [21/Sep/2025:09:43:47 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:44:10.286Z info: ::1 - - [21/Sep/2025:09:44:10 +0000] "GET /api/admin/tasks HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:44:10.296Z info: ::1 - - [21/Sep/2025:09:44:10 +0000] "GET /api/admin/tasks HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:44:12.219Z info: ::1 - - [21/Sep/2025:09:44:12 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:44:12.224Z info: ::1 - - [21/Sep/2025:09:44:12 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:48:16.013Z info: Server running in undefined mode on port 5000
+2025-09-21T09:49:33.221Z info: Server running in undefined mode on port 5000
+2025-09-21T09:51:43.248Z info: ::1 - - [21/Sep/2025:09:51:43 +0000] "POST /api/auth/login HTTP/1.1" 500 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:51:51.383Z info: ::1 - - [21/Sep/2025:09:51:51 +0000] "POST /api/auth/login HTTP/1.1" 500 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:51:53.311Z info: ::1 - - [21/Sep/2025:09:51:53 +0000] "POST /api/auth/login HTTP/1.1" 500 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:52:13.111Z info: ::1 - - [21/Sep/2025:09:52:13 +0000] "POST /api/auth/login HTTP/1.1" 500 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:52:15.135Z info: ::1 - - [21/Sep/2025:09:52:15 +0000] "POST /api/auth/login HTTP/1.1" 500 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:52:15.914Z info: ::1 - - [21/Sep/2025:09:52:15 +0000] "POST /api/auth/login HTTP/1.1" 500 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:52:16.429Z info: ::1 - - [21/Sep/2025:09:52:16 +0000] "POST /api/auth/login HTTP/1.1" 500 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:52:16.926Z info: ::1 - - [21/Sep/2025:09:52:16 +0000] "POST /api/auth/login HTTP/1.1" 500 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:52:17.212Z info: ::1 - - [21/Sep/2025:09:52:17 +0000] "POST /api/auth/login HTTP/1.1" 500 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:52:22.674Z info: ::1 - - [21/Sep/2025:09:52:22 +0000] "POST /api/auth/login HTTP/1.1" 500 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T09:53:16.272Z info: ::1 - - [21/Sep/2025:09:53:16 +0000] "POST /api/auth/login HTTP/1.1" 500 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:09.939Z info: Server running in undefined mode on port 5000
+2025-09-21T10:02:14.869Z info: ::1 - - [21/Sep/2025:10:02:14 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:14.985Z info: ::1 - - [21/Sep/2025:10:02:14 +0000] "GET /api/auth/me HTTP/1.1" 200 112 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:15.013Z info: ::1 - - [21/Sep/2025:10:02:15 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:19.615Z info: ::1 - - [21/Sep/2025:10:02:19 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:19.630Z info: ::1 - - [21/Sep/2025:10:02:19 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:26.406Z info: ::1 - - [21/Sep/2025:10:02:26 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:26.413Z info: ::1 - - [21/Sep/2025:10:02:26 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:35.692Z info: ::1 - - [21/Sep/2025:10:02:35 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:35.725Z info: ::1 - - [21/Sep/2025:10:02:35 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:37.118Z info: ::1 - - [21/Sep/2025:10:02:37 +0000] "GET /api/admin/tasks HTTP/1.1" 200 297 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:37.154Z info: ::1 - - [21/Sep/2025:10:02:37 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:39.360Z info: ::1 - - [21/Sep/2025:10:02:39 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:39.400Z info: ::1 - - [21/Sep/2025:10:02:39 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:39.983Z info: ::1 - - [21/Sep/2025:10:02:39 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:40.019Z info: ::1 - - [21/Sep/2025:10:02:40 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:42.738Z info: ::1 - - [21/Sep/2025:10:02:42 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:42.744Z info: ::1 - - [21/Sep/2025:10:02:42 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:43.395Z info: ::1 - - [21/Sep/2025:10:02:43 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:43.401Z info: ::1 - - [21/Sep/2025:10:02:43 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:45.851Z info: ::1 - - [21/Sep/2025:10:02:45 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:45.862Z info: ::1 - - [21/Sep/2025:10:02:45 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:50.572Z info: ::1 - - [21/Sep/2025:10:02:50 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:02:55.961Z info: ::1 - - [21/Sep/2025:10:02:55 +0000] "POST /api/auth/logout HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:13.679Z info: ::1 - - [21/Sep/2025:10:03:13 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:13.695Z info: ::1 - - [21/Sep/2025:10:03:13 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:22.166Z info: ::1 - - [21/Sep/2025:10:03:22 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:22.177Z info: ::1 - - [21/Sep/2025:10:03:22 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:38.609Z info: ::1 - - [21/Sep/2025:10:03:38 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:38.760Z info: ::1 - - [21/Sep/2025:10:03:38 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:38.776Z info: ::1 - - [21/Sep/2025:10:03:38 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:41.924Z info: ::1 - - [21/Sep/2025:10:03:41 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:47.016Z info: ::1 - - [21/Sep/2025:10:03:47 +0000] "GET /api/admin/tasks HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:47.023Z info: ::1 - - [21/Sep/2025:10:03:47 +0000] "GET /api/admin/tasks HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:48.658Z info: ::1 - - [21/Sep/2025:10:03:48 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:03:48.663Z info: ::1 - - [21/Sep/2025:10:03:48 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:04:03.622Z info: ::1 - - [21/Sep/2025:10:04:03 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:04:03.637Z info: ::1 - - [21/Sep/2025:10:04:03 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:04:22.985Z info: ::1 - - [21/Sep/2025:10:04:22 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:04:23.009Z info: ::1 - - [21/Sep/2025:10:04:23 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:13:48.145Z info: ::1 - - [21/Sep/2025:10:13:48 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:13:48.305Z info: ::1 - - [21/Sep/2025:10:13:48 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:13:48.319Z info: ::1 - - [21/Sep/2025:10:13:48 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:13:59.580Z info: ::1 - - [21/Sep/2025:10:13:59 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:13:59.611Z info: ::1 - - [21/Sep/2025:10:13:59 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:14:00.541Z info: ::1 - - [21/Sep/2025:10:14:00 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:14:00.569Z info: ::1 - - [21/Sep/2025:10:14:00 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:14:03.449Z info: ::1 - - [21/Sep/2025:10:14:03 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:14:03.455Z info: ::1 - - [21/Sep/2025:10:14:03 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:14:04.419Z info: ::1 - - [21/Sep/2025:10:14:04 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:14:04.426Z info: ::1 - - [21/Sep/2025:10:14:04 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:14:05.416Z info: ::1 - - [21/Sep/2025:10:14:05 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:14:05.422Z info: ::1 - - [21/Sep/2025:10:14:05 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:30:50.530Z info: ::1 - - [21/Sep/2025:10:30:50 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:30:50.545Z info: ::1 - - [21/Sep/2025:10:30:50 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:36:38.524Z info: ::1 - - [21/Sep/2025:10:36:38 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:36:38.596Z info: ::1 - - [21/Sep/2025:10:36:38 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:36:38.612Z info: ::1 - - [21/Sep/2025:10:36:38 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:36:42.694Z info: ::1 - - [21/Sep/2025:10:36:42 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:36:42.704Z info: ::1 - - [21/Sep/2025:10:36:42 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:37:36.010Z info: ::1 - - [21/Sep/2025:10:37:36 +0000] "POST /api/admin/users HTTP/1.1" 201 342 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:37:36.023Z info: ::1 - - [21/Sep/2025:10:37:36 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:38:07.658Z info: ::1 - - [21/Sep/2025:10:38:07 +0000] "PUT /api/admin/users/68cfd56f0cde07ae3e5f7b5b/promote HTTP/1.1" 200 390 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:38:07.668Z info: ::1 - - [21/Sep/2025:10:38:07 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:38:46.368Z info: ::1 - - [21/Sep/2025:10:38:46 +0000] "DELETE /api/admin/users/68cfd56f0cde07ae3e5f7b5b HTTP/1.1" 200 39 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:38:46.380Z info: ::1 - - [21/Sep/2025:10:38:46 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:39:48.195Z info: ::1 - - [21/Sep/2025:10:39:48 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:40:12.082Z info: ::1 - - [21/Sep/2025:10:40:12 +0000] "POST /api/admin/users HTTP/1.1" 201 342 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:40:12.099Z info: ::1 - - [21/Sep/2025:10:40:12 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:40:28.826Z info: ::1 - - [21/Sep/2025:10:40:28 +0000] "PUT /api/admin/users/68cfd60b0cde07ae3e5f7b6e/promote HTTP/1.1" 200 390 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:40:28.836Z info: ::1 - - [21/Sep/2025:10:40:28 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:41:14.570Z info: ::1 - - [21/Sep/2025:10:41:14 +0000] "PUT /api/admin/users/68cfd60b0cde07ae3e5f7b6e HTTP/1.1" 200 274 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:41:14.583Z info: ::1 - - [21/Sep/2025:10:41:14 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:41:55.889Z info: ::1 - - [21/Sep/2025:10:41:55 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:41:55.897Z info: ::1 - - [21/Sep/2025:10:41:55 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:01.722Z info: ::1 - - [21/Sep/2025:10:42:01 +0000] "POST /api/auth/login HTTP/1.1" 401 39 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:12.088Z info: ::1 - - [21/Sep/2025:10:42:12 +0000] "POST /api/auth/login HTTP/1.1" 401 39 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:13.633Z info: ::1 - - [21/Sep/2025:10:42:13 +0000] "POST /api/auth/login HTTP/1.1" 401 39 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:33.815Z info: ::1 - - [21/Sep/2025:10:42:33 +0000] "POST /api/auth/login HTTP/1.1" 200 146 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:33.909Z info: ::1 - - [21/Sep/2025:10:42:33 +0000] "GET /api/employee/projects HTTP/1.1" 403 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:33.923Z info: ::1 - - [21/Sep/2025:10:42:33 +0000] "GET /api/employee/projects HTTP/1.1" 403 49 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:36.747Z info: ::1 - - [21/Sep/2025:10:42:36 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:41.718Z info: ::1 - - [21/Sep/2025:10:42:41 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:41.723Z info: ::1 - - [21/Sep/2025:10:42:41 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:53.978Z info: ::1 - - [21/Sep/2025:10:42:53 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:54.079Z info: ::1 - - [21/Sep/2025:10:42:54 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:54.089Z info: ::1 - - [21/Sep/2025:10:42:54 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:57.264Z info: ::1 - - [21/Sep/2025:10:42:57 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:42:57.273Z info: ::1 - - [21/Sep/2025:10:42:57 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:43:22.334Z info: ::1 - - [21/Sep/2025:10:43:22 +0000] "PUT /api/admin/users/68cfc6c2b347147ddfe1f6bd HTTP/1.1" 200 266 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:43:22.348Z info: ::1 - - [21/Sep/2025:10:43:22 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:45:53.322Z info: Server running in undefined mode on port 5000
+2025-09-21T10:46:03.623Z info: ::1 - - [21/Sep/2025:10:46:03 +0000] "DELETE /api/admin/users/68cfd60b0cde07ae3e5f7b6e HTTP/1.1" 200 39 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:46:03.644Z info: ::1 - - [21/Sep/2025:10:46:03 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:46:35.551Z info: ::1 - - [21/Sep/2025:10:46:35 +0000] "POST /api/admin/users HTTP/1.1" 400 37 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:46:39.598Z info: ::1 - - [21/Sep/2025:10:46:39 +0000] "POST /api/admin/users HTTP/1.1" 400 37 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:47:11.376Z info: ::1 - - [21/Sep/2025:10:47:11 +0000] "POST /api/admin/users HTTP/1.1" 201 342 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:47:11.391Z info: ::1 - - [21/Sep/2025:10:47:11 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:47:33.545Z info: ::1 - - [21/Sep/2025:10:47:33 +0000] "PUT /api/admin/users/68cfd7aeae8a50d1dbf4141c HTTP/1.1" 200 273 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:47:33.558Z info: ::1 - - [21/Sep/2025:10:47:33 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:50:14.438Z info: Server running in undefined mode on port 5000
+2025-09-21T10:50:16.725Z info: Server running in undefined mode on port 5000
+2025-09-21T10:50:52.145Z info: Server running in undefined mode on port 5000
+2025-09-21T10:50:54.665Z info: Server running in undefined mode on port 5000
+2025-09-21T10:52:16.889Z info: Server running in undefined mode on port 5000
+2025-09-21T10:52:29.114Z info: ::1 - - [21/Sep/2025:10:52:29 +0000] "DELETE /api/admin/users/68cfd7aeae8a50d1dbf4141c HTTP/1.1" 200 39 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:52:29.138Z info: ::1 - - [21/Sep/2025:10:52:29 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:53:07.580Z info: ::1 - - [21/Sep/2025:10:53:07 +0000] "POST /api/admin/users HTTP/1.1" 400 37 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:53:22.253Z info: ::1 - - [21/Sep/2025:10:53:22 +0000] "POST /api/admin/users HTTP/1.1" 500 90 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:53:45.891Z info: ::1 - - [21/Sep/2025:10:53:45 +0000] "POST /api/admin/users HTTP/1.1" 201 340 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:53:45.915Z info: ::1 - - [21/Sep/2025:10:53:45 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:54:01.613Z info: ::1 - - [21/Sep/2025:10:54:01 +0000] "PUT /api/admin/users/68cfd939f2576d215ced9f1e HTTP/1.1" 200 271 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:54:01.627Z info: ::1 - - [21/Sep/2025:10:54:01 +0000] "GET /api/admin/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:54:39.041Z info: ::1 - - [21/Sep/2025:10:54:39 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T10:54:39.050Z info: ::1 - - [21/Sep/2025:10:54:39 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:21:18.492Z info: Server running in undefined mode on port 5000
+2025-09-21T11:25:59.145Z info: ::1 - - [21/Sep/2025:11:25:59 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:25:59.177Z info: ::1 - - [21/Sep/2025:11:25:59 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:26:10.876Z info: ::1 - - [21/Sep/2025:11:26:10 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:26:10.976Z info: ::1 - - [21/Sep/2025:11:26:10 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:26:11.024Z info: ::1 - - [21/Sep/2025:11:26:11 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:26:11.029Z info: ::1 - - [21/Sep/2025:11:26:11 +0000] "GET /api/projects HTTP/1.1" 200 729 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:26:11.047Z info: ::1 - - [21/Sep/2025:11:26:11 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:26:18.312Z info: ::1 - - [21/Sep/2025:11:26:18 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:26:18.330Z info: ::1 - - [21/Sep/2025:11:26:18 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:26:19.338Z info: ::1 - - [21/Sep/2025:11:26:19 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:26:19.345Z info: ::1 - - [21/Sep/2025:11:26:19 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:26:20.420Z info: ::1 - - [21/Sep/2025:11:26:20 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:26:20.429Z info: ::1 - - [21/Sep/2025:11:26:20 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:51:12.908Z info: ::1 - - [21/Sep/2025:11:51:12 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T11:51:12.933Z info: ::1 - - [21/Sep/2025:11:51:12 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:10:03.709Z info: ::1 - - [21/Sep/2025:12:10:03 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:10:03.723Z info: ::1 - - [21/Sep/2025:12:10:03 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:10:20.259Z info: ::1 - - [21/Sep/2025:12:10:20 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:10:20.395Z info: ::1 - - [21/Sep/2025:12:10:20 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:10:20.406Z info: ::1 - - [21/Sep/2025:12:10:20 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:10:20.436Z info: ::1 - - [21/Sep/2025:12:10:20 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:10:20.457Z info: ::1 - - [21/Sep/2025:12:10:20 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:10:54.301Z info: ::1 - - [21/Sep/2025:12:10:54 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:06.572Z info: ::1 - - [21/Sep/2025:12:11:06 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:06.618Z info: ::1 - - [21/Sep/2025:12:11:06 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:07.395Z info: ::1 - - [21/Sep/2025:12:11:07 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:07.415Z info: ::1 - - [21/Sep/2025:12:11:07 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:08.428Z info: ::1 - - [21/Sep/2025:12:11:08 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:08.468Z info: ::1 - - [21/Sep/2025:12:11:08 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:13.351Z info: ::1 - - [21/Sep/2025:12:11:13 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:13.371Z info: ::1 - - [21/Sep/2025:12:11:13 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:17.892Z info: ::1 - - [21/Sep/2025:12:11:17 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:17.897Z info: ::1 - - [21/Sep/2025:12:11:17 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:18.605Z info: ::1 - - [21/Sep/2025:12:11:18 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:18.616Z info: ::1 - - [21/Sep/2025:12:11:18 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:19.980Z info: ::1 - - [21/Sep/2025:12:11:19 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:11:19.999Z info: ::1 - - [21/Sep/2025:12:11:19 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:22:52.851Z info: ::1 - - [21/Sep/2025:12:22:52 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:22:52.870Z info: ::1 - - [21/Sep/2025:12:22:52 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:48:16.202Z info: ::1 - - [21/Sep/2025:12:48:16 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:48:16.215Z info: ::1 - - [21/Sep/2025:12:48:16 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:48:26.692Z info: ::1 - - [21/Sep/2025:12:48:26 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:48:26.856Z info: ::1 - - [21/Sep/2025:12:48:26 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T12:48:26.875Z info: ::1 - - [21/Sep/2025:12:48:26 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:05.243Z info: ::1 - - [21/Sep/2025:13:05:05 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:05.276Z info: ::1 - - [21/Sep/2025:13:05:05 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:13.476Z info: ::1 - - [21/Sep/2025:13:05:13 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:13.501Z info: ::1 - - [21/Sep/2025:13:05:13 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:23.997Z info: ::1 - - [21/Sep/2025:13:05:23 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:24.179Z info: ::1 - - [21/Sep/2025:13:05:24 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:24.206Z info: ::1 - - [21/Sep/2025:13:05:24 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:24.214Z info: ::1 - - [21/Sep/2025:13:05:24 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:24.236Z info: ::1 - - [21/Sep/2025:13:05:24 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:44.526Z info: ::1 - - [21/Sep/2025:13:05:44 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:44.551Z info: ::1 - - [21/Sep/2025:13:05:44 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:45.722Z info: ::1 - - [21/Sep/2025:13:05:45 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:45.751Z info: ::1 - - [21/Sep/2025:13:05:45 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:48.586Z info: ::1 - - [21/Sep/2025:13:05:48 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:48.592Z info: ::1 - - [21/Sep/2025:13:05:48 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:49.246Z info: ::1 - - [21/Sep/2025:13:05:49 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:49.255Z info: ::1 - - [21/Sep/2025:13:05:49 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:51.428Z info: ::1 - - [21/Sep/2025:13:05:51 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:05:51.463Z info: ::1 - - [21/Sep/2025:13:05:51 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:03.193Z info: ::1 - - [21/Sep/2025:13:06:03 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:03.226Z info: ::1 - - [21/Sep/2025:13:06:03 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:10.867Z info: ::1 - - [21/Sep/2025:13:06:10 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:10.894Z info: ::1 - - [21/Sep/2025:13:06:10 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:15.248Z info: ::1 - - [21/Sep/2025:13:06:15 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:15.257Z info: ::1 - - [21/Sep/2025:13:06:15 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:16.046Z info: ::1 - - [21/Sep/2025:13:06:16 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:16.053Z info: ::1 - - [21/Sep/2025:13:06:16 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:20.430Z info: ::1 - - [21/Sep/2025:13:06:20 +0000] "POST /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:38.265Z info: ::1 - - [21/Sep/2025:13:06:38 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:38.281Z info: ::1 - - [21/Sep/2025:13:06:38 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:41.156Z info: ::1 - - [21/Sep/2025:13:06:41 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:41.183Z info: ::1 - - [21/Sep/2025:13:06:41 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:41.783Z info: ::1 - - [21/Sep/2025:13:06:41 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:41.815Z info: ::1 - - [21/Sep/2025:13:06:41 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:42.245Z info: ::1 - - [21/Sep/2025:13:06:42 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:42.264Z info: ::1 - - [21/Sep/2025:13:06:42 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:46.511Z info: ::1 - - [21/Sep/2025:13:06:46 +0000] "DELETE /api/projects/68cbe636c693b02e5e312f75 HTTP/1.1" 200 57 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:06:46.528Z info: ::1 - - [21/Sep/2025:13:06:46 +0000] "GET /api/projects HTTP/1.1" 200 50 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:07:04.909Z info: ::1 - - [21/Sep/2025:13:07:04 +0000] "POST /api/projects HTTP/1.1" 500 152 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:11:33.672Z info: ::1 - - [21/Sep/2025:13:11:33 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:11:33.678Z info: ::1 - - [21/Sep/2025:13:11:33 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:11:35.676Z info: ::1 - - [21/Sep/2025:13:11:35 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:11:35.682Z info: ::1 - - [21/Sep/2025:13:11:35 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:11:40.591Z info: ::1 - - [21/Sep/2025:13:11:40 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:11:40.604Z info: ::1 - - [21/Sep/2025:13:11:40 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:13:40.165Z info: Server running in undefined mode on port 5000
+2025-09-21T13:13:50.856Z info: Server running in undefined mode on port 5000
+2025-09-21T13:13:54.104Z info: Server running in undefined mode on port 5000
+2025-09-21T13:15:49.321Z info: Server running in undefined mode on port 5000
+2025-09-21T13:18:56.747Z info: ::1 - - [21/Sep/2025:13:18:56 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:18:56.776Z info: ::1 - - [21/Sep/2025:13:18:56 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:19:55.347Z info: ::1 - - [21/Sep/2025:13:19:55 +0000] "POST /api/projects HTTP/1.1" 201 898 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:19:55.501Z info: ::1 - - [21/Sep/2025:13:19:55 +0000] "GET /api/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:22:25.190Z info: ::1 - - [21/Sep/2025:13:22:25 +0000] "POST /api/admin/projects/68cffb7bf8b249bd7269485d/payments HTTP/1.1" 200 962 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:22:25.270Z info: ::1 - - [21/Sep/2025:13:22:25 +0000] "GET /api/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:22:28.508Z info: ::1 - - [21/Sep/2025:13:22:28 +0000] "POST /api/admin/projects/68cffb7bf8b249bd7269485d/milestones HTTP/1.1" 201 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:22:28.543Z info: ::1 - - [21/Sep/2025:13:22:28 +0000] "GET /api/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:22:30.908Z info: ::1 - - [21/Sep/2025:13:22:30 +0000] "POST /api/admin/projects/68cffb7bf8b249bd7269485d/details HTTP/1.1" 400 82 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:22:33.134Z info: ::1 - - [21/Sep/2025:13:22:33 +0000] "POST /api/admin/projects/68cffb7bf8b249bd7269485d/time-entries HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:22:33.185Z info: ::1 - - [21/Sep/2025:13:22:33 +0000] "GET /api/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:27:40.019Z info: Server running in undefined mode on port 5000
+2025-09-21T13:28:44.462Z info: Server running in undefined mode on port 5000
+2025-09-21T13:37:41.134Z info: Server running in undefined mode on port 5000
+2025-09-21T13:39:55.166Z info: Server running in undefined mode on port 5000
+2025-09-21T13:44:13.725Z info: Server running in undefined mode on port 5000
+2025-09-21T13:44:26.691Z info: Server running in undefined mode on port 5000
+2025-09-21T13:44:34.635Z info: Server running in undefined mode on port 5000
+2025-09-21T13:47:31.202Z info: ::1 - - [21/Sep/2025:13:47:31 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:47:31.220Z info: ::1 - - [21/Sep/2025:13:47:31 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:47:44.593Z info: ::1 - - [21/Sep/2025:13:47:44 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:47:44.751Z info: ::1 - - [21/Sep/2025:13:47:44 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:47:44.776Z info: ::1 - - [21/Sep/2025:13:47:44 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:47:44.895Z info: ::1 - - [21/Sep/2025:13:47:44 +0000] "GET /api/admin/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:47:44.935Z info: ::1 - - [21/Sep/2025:13:47:44 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:49:04.743Z info: ::1 - - [21/Sep/2025:13:49:04 +0000] "POST /api/admin/projects HTTP/1.1" 201 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:49:04.886Z info: ::1 - - [21/Sep/2025:13:49:04 +0000] "GET /api/admin/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:24.796Z info: ::1 - - [21/Sep/2025:13:52:24 +0000] "PUT /api/admin/projects/68d002500ddc80a792ddc3c7/recalculate HTTP/1.1" 200 146 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:24.879Z info: ::1 - - [21/Sep/2025:13:52:24 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:33.896Z info: ::1 - - [21/Sep/2025:13:52:33 +0000] "POST /api/admin/projects/68d002500ddc80a792ddc3c7/payments HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:33.963Z info: ::1 - - [21/Sep/2025:13:52:33 +0000] "GET /api/admin/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:35.347Z info: ::1 - - [21/Sep/2025:13:52:35 +0000] "PUT /api/admin/projects/68d002500ddc80a792ddc3c7/client-status HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:35.399Z info: ::1 - - [21/Sep/2025:13:52:35 +0000] "GET /api/admin/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:37.245Z info: ::1 - - [21/Sep/2025:13:52:37 +0000] "PUT /api/admin/projects/68d002500ddc80a792ddc3c7/employees HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:37.335Z info: ::1 - - [21/Sep/2025:13:52:37 +0000] "GET /api/admin/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:38.339Z info: ::1 - - [21/Sep/2025:13:52:38 +0000] "PUT /api/admin/projects/68d002500ddc80a792ddc3c7/teamlead HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:38.454Z info: ::1 - - [21/Sep/2025:13:52:38 +0000] "GET /api/admin/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:40.128Z info: ::1 - - [21/Sep/2025:13:52:40 +0000] "POST /api/admin/projects/68d002500ddc80a792ddc3c7/milestones HTTP/1.1" 201 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:40.180Z info: ::1 - - [21/Sep/2025:13:52:40 +0000] "GET /api/admin/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:41.913Z info: ::1 - - [21/Sep/2025:13:52:41 +0000] "POST /api/admin/projects/68d002500ddc80a792ddc3c7/details HTTP/1.1" 400 80 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:46.519Z info: ::1 - - [21/Sep/2025:13:52:46 +0000] "POST /api/admin/projects/68d002500ddc80a792ddc3c7/details HTTP/1.1" 400 80 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:49.250Z info: ::1 - - [21/Sep/2025:13:52:49 +0000] "POST /api/admin/projects/68d002500ddc80a792ddc3c7/time-entries HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:49.339Z info: ::1 - - [21/Sep/2025:13:52:49 +0000] "GET /api/admin/projects HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T13:52:50.653Z info: ::1 - - [21/Sep/2025:13:52:50 +0000] "POST /api/admin/project-groups HTTP/1.1" 201 491 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T14:07:10.503Z info: ::1 - - [21/Sep/2025:14:07:10 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T14:07:10.530Z info: ::1 - - [21/Sep/2025:14:07:10 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T14:07:19.879Z info: ::1 - - [21/Sep/2025:14:07:19 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T14:07:19.966Z info: ::1 - - [21/Sep/2025:14:07:19 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T17:38:22.489Z info: ::1 - - [21/Sep/2025:17:38:22 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T17:38:22.700Z info: ::1 - - [21/Sep/2025:17:38:22 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T17:38:51.505Z info: ::1 - - [21/Sep/2025:17:38:51 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T17:38:51.660Z info: ::1 - - [21/Sep/2025:17:38:51 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T17:38:51.774Z info: ::1 - - [21/Sep/2025:17:38:51 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T17:38:51.809Z info: ::1 - - [21/Sep/2025:17:38:51 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T17:38:51.915Z info: ::1 - - [21/Sep/2025:17:38:51 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T17:39:00.744Z info: ::1 - - [21/Sep/2025:17:39:00 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T17:39:00.777Z info: ::1 - - [21/Sep/2025:17:39:00 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T17:55:14.943Z info: ::1 - - [21/Sep/2025:17:55:14 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T17:55:14.966Z info: ::1 - - [21/Sep/2025:17:55:14 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T18:39:18.336Z info: ::1 - - [21/Sep/2025:18:39:18 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T18:39:18.360Z info: ::1 - - [21/Sep/2025:18:39:18 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T18:45:12.926Z info: ::1 - - [21/Sep/2025:18:45:12 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T18:45:13.037Z info: ::1 - - [21/Sep/2025:18:45:13 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T18:45:13.066Z info: ::1 - - [21/Sep/2025:18:45:13 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T18:45:13.135Z info: ::1 - - [21/Sep/2025:18:45:13 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T18:45:13.166Z info: ::1 - - [21/Sep/2025:18:45:13 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T18:45:21.092Z info: ::1 - - [21/Sep/2025:18:45:21 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T18:45:21.101Z info: ::1 - - [21/Sep/2025:18:45:21 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:10:09.835Z info: ::1 - - [21/Sep/2025:20:10:09 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:10:09.871Z info: ::1 - - [21/Sep/2025:20:10:09 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:10:10.208Z info: ::1 - - [21/Sep/2025:20:10:10 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:10:10.233Z info: ::1 - - [21/Sep/2025:20:10:10 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:10:11.169Z info: ::1 - - [21/Sep/2025:20:10:11 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:10:11.193Z info: ::1 - - [21/Sep/2025:20:10:11 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:10:24.530Z info: ::1 - - [21/Sep/2025:20:10:24 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:10:24.557Z info: ::1 - - [21/Sep/2025:20:10:24 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:10:29.733Z info: ::1 - - [21/Sep/2025:20:10:29 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:10:29.740Z info: ::1 - - [21/Sep/2025:20:10:29 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:10:56.327Z info: ::1 - - [21/Sep/2025:20:10:56 +0000] "POST /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:11:05.932Z info: ::1 - - [21/Sep/2025:20:11:05 +0000] "POST /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:11:21.875Z info: ::1 - - [21/Sep/2025:20:11:21 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:11:21.881Z info: ::1 - - [21/Sep/2025:20:11:21 +0000] "GET /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:11:24.788Z info: ::1 - - [21/Sep/2025:20:11:24 +0000] "POST /api/notifications HTTP/1.1" 404 64 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:20:00.587Z info: Server running in undefined mode on port 5000
+2025-09-21T20:24:16.321Z info: Server running in undefined mode on port 5000
+2025-09-21T20:28:30.336Z info: Server running in undefined mode on port 5000
+2025-09-21T20:30:40.708Z info: Server running in undefined mode on port 5000
+2025-09-21T20:33:54.931Z info: ::1 - - [21/Sep/2025:20:33:54 +0000] "GET /api/notifications/my HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:33:54.942Z info: ::1 - - [21/Sep/2025:20:33:54 +0000] "GET /api/notifications/stats HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:34:01.208Z info: ::1 - - [21/Sep/2025:20:34:01 +0000] "POST /api/notifications/send HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:34:48.839Z info: ::1 - - [21/Sep/2025:20:34:48 +0000] "POST /api/notifications/send HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:34:51.654Z info: ::1 - - [21/Sep/2025:20:34:51 +0000] "GET /api/notifications/my HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:32.018Z info: ::1 - - [21/Sep/2025:20:35:32 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:32.027Z info: ::1 - - [21/Sep/2025:20:35:32 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:34.781Z info: ::1 - - [21/Sep/2025:20:35:34 +0000] "GET /api/notifications/my HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:34.793Z info: ::1 - - [21/Sep/2025:20:35:34 +0000] "GET /api/notifications/my HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:34.804Z info: ::1 - - [21/Sep/2025:20:35:34 +0000] "GET /api/notifications/stats HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:34.817Z info: ::1 - - [21/Sep/2025:20:35:34 +0000] "GET /api/notifications/stats HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:37.749Z info: ::1 - - [21/Sep/2025:20:35:37 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:37.765Z info: ::1 - - [21/Sep/2025:20:35:37 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:41.769Z info: ::1 - - [21/Sep/2025:20:35:41 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:41.798Z info: ::1 - - [21/Sep/2025:20:35:41 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:42.878Z info: ::1 - - [21/Sep/2025:20:35:42 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:35:42.924Z info: ::1 - - [21/Sep/2025:20:35:42 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:36:01.806Z info: ::1 - - [21/Sep/2025:20:36:01 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:36:01.846Z info: ::1 - - [21/Sep/2025:20:36:01 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:05.875Z info: ::1 - - [21/Sep/2025:20:55:05 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:05.884Z info: ::1 - - [21/Sep/2025:20:55:05 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:07.984Z info: ::1 - - [21/Sep/2025:20:55:07 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:07.991Z info: ::1 - - [21/Sep/2025:20:55:07 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:15.141Z info: ::1 - - [21/Sep/2025:20:55:15 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:15.144Z info: ::1 - - [21/Sep/2025:20:55:15 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:15.853Z info: ::1 - - [21/Sep/2025:20:55:15 +0000] "GET /api/notifications/my HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:15.855Z info: ::1 - - [21/Sep/2025:20:55:15 +0000] "GET /api/notifications/stats HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:15.859Z info: ::1 - - [21/Sep/2025:20:55:15 +0000] "GET /api/notifications/my HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:15.861Z info: ::1 - - [21/Sep/2025:20:55:15 +0000] "GET /api/notifications/stats HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:18.899Z info: ::1 - - [21/Sep/2025:20:55:18 +0000] "GET /api/notifications/unread HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T20:55:19.324Z info: ::1 - - [21/Sep/2025:20:55:19 +0000] "GET /api/notifications/unread HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:01:45.266Z info: Server running in undefined mode on port 5000
+2025-09-21T21:02:46.952Z info: ::1 - - [21/Sep/2025:21:02:46 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:02:46.967Z info: ::1 - - [21/Sep/2025:21:02:46 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:02:53.800Z info: ::1 - - [21/Sep/2025:21:02:53 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:02:53.813Z info: ::1 - - [21/Sep/2025:21:02:53 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:03:04.559Z info: ::1 - - [21/Sep/2025:21:03:04 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:03:04.644Z info: ::1 - - [21/Sep/2025:21:03:04 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:03:04.664Z info: ::1 - - [21/Sep/2025:21:03:04 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:03:04.720Z info: ::1 - - [21/Sep/2025:21:03:04 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:03:04.749Z info: ::1 - - [21/Sep/2025:21:03:04 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:06:41.229Z info: Server running in undefined mode on port 5000
+2025-09-21T21:06:48.659Z info: Server running in undefined mode on port 5000
+2025-09-21T21:07:49.160Z info: Server running in undefined mode on port 5000
+2025-09-21T21:08:56.654Z info: Server running in undefined mode on port 5000
+2025-09-21T21:12:39.442Z info: ::1 - - [21/Sep/2025:21:12:39 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:12:39.457Z info: ::1 - - [21/Sep/2025:21:12:39 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:12:50.708Z info: ::1 - - [21/Sep/2025:21:12:50 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:12:50.717Z info: ::1 - - [21/Sep/2025:21:12:50 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:12:59.153Z info: ::1 - - [21/Sep/2025:21:12:59 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:12:59.160Z info: ::1 - - [21/Sep/2025:21:12:59 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:13:14.272Z info: ::1 - - [21/Sep/2025:21:13:14 +0000] "POST /api/auth/login HTTP/1.1" 401 39 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:13:32.388Z info: ::1 - - [21/Sep/2025:21:13:32 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:13:32.486Z info: ::1 - - [21/Sep/2025:21:13:32 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:13:32.508Z info: ::1 - - [21/Sep/2025:21:13:32 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:13:32.566Z info: ::1 - - [21/Sep/2025:21:13:32 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:13:32.605Z info: ::1 - - [21/Sep/2025:21:13:32 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:13:48.194Z info: ::1 - - [21/Sep/2025:21:13:48 +0000] "POST /api/admin/notifications/send HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:15:25.368Z info: ::1 - - [21/Sep/2025:21:15:25 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:15:25.377Z info: ::1 - - [21/Sep/2025:21:15:25 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:21:07.026Z info: Server running in undefined mode on port 5000
+2025-09-21T21:22:42.088Z info: ::1 - - [21/Sep/2025:21:22:42 +0000] "POST /api/auth/login HTTP/1.1" 200 140 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:22:42.243Z info: ::1 - - [21/Sep/2025:21:22:42 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:22:42.326Z info: ::1 - - [21/Sep/2025:21:22:42 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:22:42.372Z info: ::1 - - [21/Sep/2025:21:22:42 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:22:42.431Z info: ::1 - - [21/Sep/2025:21:22:42 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:22:58.155Z info: ::1 - - [21/Sep/2025:21:22:58 +0000] "POST /api/admin/notifications/send HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:28:21.245Z info: Server running in undefined mode on port 5000
+2025-09-21T21:28:27.251Z info: ::1 - - [21/Sep/2025:21:28:27 +0000] "POST /api/auth/logout HTTP/1.1" 200 52 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:28:34.088Z info: ::1 - - [21/Sep/2025:21:28:34 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:28:34.108Z info: ::1 - - [21/Sep/2025:21:28:34 +0000] "GET /api/auth/me HTTP/1.1" 401 38 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:28:48.299Z info: ::1 - - [21/Sep/2025:21:28:48 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:28:48.437Z info: ::1 - - [21/Sep/2025:21:28:48 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:28:48.461Z info: ::1 - - [21/Sep/2025:21:28:48 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:28:48.551Z info: ::1 - - [21/Sep/2025:21:28:48 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:28:48.594Z info: ::1 - - [21/Sep/2025:21:28:48 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:35:31.419Z info: ::1 - - [21/Sep/2025:21:35:31 +0000] "GET /api/notifications/my HTTP/1.1" 200 2 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:35:53.493Z info: ::1 - - [21/Sep/2025:21:35:53 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:35:53.504Z info: ::1 - - [21/Sep/2025:21:35:53 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:35:53.547Z info: ::1 - - [21/Sep/2025:21:35:53 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:35:53.581Z info: ::1 - - [21/Sep/2025:21:35:53 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:35:59.657Z info: ::1 - - [21/Sep/2025:21:35:59 +0000] "GET /api/notifications/my HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:35:59.668Z info: ::1 - - [21/Sep/2025:21:35:59 +0000] "GET /api/notifications/my HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:36:33.150Z info: ::1 - - [21/Sep/2025:21:36:33 +0000] "POST /api/notifications/send HTTP/1.1" 201 248 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:41:02.825Z info: Server running in undefined mode on port 5000
+2025-09-21T21:45:21.539Z info: ::1 - - [21/Sep/2025:21:45:21 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:45:21.561Z info: ::1 - - [21/Sep/2025:21:45:21 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:45:21.640Z info: ::1 - - [21/Sep/2025:21:45:21 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:45:21.682Z info: ::1 - - [21/Sep/2025:21:45:21 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:46:32.650Z info: ::1 - - [21/Sep/2025:21:46:32 +0000] "GET /api/notifications/my HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:46:32.671Z info: ::1 - - [21/Sep/2025:21:46:32 +0000] "GET /api/notifications/stats HTTP/1.1" 200 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:46:32.676Z info: ::1 - - [21/Sep/2025:21:46:32 +0000] "GET /api/notifications/my HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:46:32.702Z info: ::1 - - [21/Sep/2025:21:46:32 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:46:46.474Z info: ::1 - - [21/Sep/2025:21:46:46 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:46:46.501Z info: ::1 - - [21/Sep/2025:21:46:46 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:46:56.960Z info: ::1 - - [21/Sep/2025:21:46:56 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:46:57.195Z info: ::1 - - [21/Sep/2025:21:46:57 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:46:57.233Z info: ::1 - - [21/Sep/2025:21:46:57 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:46:57.254Z info: ::1 - - [21/Sep/2025:21:46:57 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:46:57.290Z info: ::1 - - [21/Sep/2025:21:46:57 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:47:00.492Z info: ::1 - - [21/Sep/2025:21:47:00 +0000] "GET /api/notifications/my HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:47:00.515Z info: ::1 - - [21/Sep/2025:21:47:00 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:47:00.523Z info: ::1 - - [21/Sep/2025:21:47:00 +0000] "GET /api/notifications/my HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:47:00.560Z info: ::1 - - [21/Sep/2025:21:47:00 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:50:24.427Z info: ::1 - - [21/Sep/2025:21:50:24 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:50:24.443Z info: ::1 - - [21/Sep/2025:21:50:24 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 287 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:50:24.450Z info: ::1 - - [21/Sep/2025:21:50:24 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:20.184Z info: ::1 - - [21/Sep/2025:21:51:20 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:20.196Z info: ::1 - - [21/Sep/2025:21:51:20 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:29.608Z info: ::1 - - [21/Sep/2025:21:51:29 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:29.777Z info: ::1 - - [21/Sep/2025:21:51:29 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:29.799Z info: ::1 - - [21/Sep/2025:21:51:29 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:29.838Z info: ::1 - - [21/Sep/2025:21:51:29 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:29.878Z info: ::1 - - [21/Sep/2025:21:51:29 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:32.856Z info: ::1 - - [21/Sep/2025:21:51:32 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:32.872Z info: ::1 - - [21/Sep/2025:21:51:32 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:32.886Z info: ::1 - - [21/Sep/2025:21:51:32 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:32.903Z info: ::1 - - [21/Sep/2025:21:51:32 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:32.926Z info: ::1 - - [21/Sep/2025:21:51:32 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:51:32.938Z info: ::1 - - [21/Sep/2025:21:51:32 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:52:47.044Z info: ::1 - - [21/Sep/2025:21:52:47 +0000] "PUT /api/notifications/68d06fe1b250139faf4fb3d0/read HTTP/1.1" 200 248 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:52:47.089Z info: ::1 - - [21/Sep/2025:21:52:47 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 287 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:52:47.098Z info: ::1 - - [21/Sep/2025:21:52:47 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:52:48.895Z info: ::1 - - [21/Sep/2025:21:52:48 +0000] "PUT /api/notifications/68d06fe1b250139faf4fb3d0/read HTTP/1.1" 200 248 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:52:48.926Z info: ::1 - - [21/Sep/2025:21:52:48 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 287 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T21:52:48.932Z info: ::1 - - [21/Sep/2025:21:52:48 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T22:10:28.970Z info: ::1 - - [21/Sep/2025:22:10:28 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T22:10:28.985Z info: ::1 - - [21/Sep/2025:22:10:28 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-21T22:10:30.057Z info: SIGINT received, shutting down gracefully
+2025-09-22T02:56:34.222Z info: Server running in undefined mode on port 5000
+2025-09-22T02:56:50.238Z info: ::1 - - [22/Sep/2025:02:56:50 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T02:56:50.250Z info: ::1 - - [22/Sep/2025:02:56:50 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T02:57:01.129Z info: ::1 - - [22/Sep/2025:02:57:01 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T02:57:01.294Z info: ::1 - - [22/Sep/2025:02:57:01 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T02:57:01.331Z info: ::1 - - [22/Sep/2025:02:57:01 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T02:57:01.480Z info: ::1 - - [22/Sep/2025:02:57:01 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T02:57:01.534Z info: ::1 - - [22/Sep/2025:02:57:01 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:27:36.494Z info: ::1 - - [22/Sep/2025:03:27:36 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:27:36.518Z info: ::1 - - [22/Sep/2025:03:27:36 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:10.372Z info: ::1 - - [22/Sep/2025:03:39:10 +0000] "POST /api/auth/login HTTP/1.1" 401 33 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:13.589Z info: ::1 - - [22/Sep/2025:03:39:13 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:13.803Z info: ::1 - - [22/Sep/2025:03:39:13 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:13.840Z info: ::1 - - [22/Sep/2025:03:39:13 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:13.900Z info: ::1 - - [22/Sep/2025:03:39:13 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:13.952Z info: ::1 - - [22/Sep/2025:03:39:13 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:19.764Z info: ::1 - - [22/Sep/2025:03:39:19 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:19.802Z info: ::1 - - [22/Sep/2025:03:39:19 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:19.838Z info: ::1 - - [22/Sep/2025:03:39:19 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:19.843Z info: ::1 - - [22/Sep/2025:03:39:19 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:19.901Z info: ::1 - - [22/Sep/2025:03:39:19 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:19.916Z info: ::1 - - [22/Sep/2025:03:39:19 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:48.499Z info: ::1 - - [22/Sep/2025:03:39:48 +0000] "POST /api/notifications/send-to-employees HTTP/1.1" 201 365 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:48.539Z info: ::1 - - [22/Sep/2025:03:39:48 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 690 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:52.242Z info: ::1 - - [22/Sep/2025:03:39:52 +0000] "PUT /api/notifications/68d0c5040183fa03d86fa891/read HTTP/1.1" 200 365 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:52.306Z info: ::1 - - [22/Sep/2025:03:39:52 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 690 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:39:52.318Z info: ::1 - - [22/Sep/2025:03:39:52 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:00.645Z info: ::1 - - [22/Sep/2025:03:40:00 +0000] "PUT /api/notifications/68d0c5040183fa03d86fa891 HTTP/1.1" 200 352 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:00.703Z info: ::1 - - [22/Sep/2025:03:40:00 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 677 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:05.115Z info: ::1 - - [22/Sep/2025:03:40:05 +0000] "PUT /api/notifications/68d0c5040183fa03d86fa891/read HTTP/1.1" 200 352 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:05.176Z info: ::1 - - [22/Sep/2025:03:40:05 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 677 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:05.196Z info: ::1 - - [22/Sep/2025:03:40:05 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:30.562Z info: ::1 - - [22/Sep/2025:03:40:30 +0000] "DELETE /api/notifications/68d0c5040183fa03d86fa891 HTTP/1.1" 200 34 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:30.610Z info: ::1 - - [22/Sep/2025:03:40:30 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 287 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:30.615Z info: ::1 - - [22/Sep/2025:03:40:30 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:46.761Z info: ::1 - - [22/Sep/2025:03:40:46 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:56.066Z info: ::1 - - [22/Sep/2025:03:40:56 +0000] "PUT /api/notifications/68d06fe1b250139faf4fb3d0/read HTTP/1.1" 200 248 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:56.121Z info: ::1 - - [22/Sep/2025:03:40:56 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 287 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:56.132Z info: ::1 - - [22/Sep/2025:03:40:56 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:40:59.532Z info: ::1 - - [22/Sep/2025:03:40:59 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:41:01.386Z info: ::1 - - [22/Sep/2025:03:41:01 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:41:05.251Z info: ::1 - - [22/Sep/2025:03:41:05 +0000] "PUT /api/notifications/68d06fe1b250139faf4fb3d0/read HTTP/1.1" 200 248 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:41:05.320Z info: ::1 - - [22/Sep/2025:03:41:05 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 287 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:41:05.331Z info: ::1 - - [22/Sep/2025:03:41:05 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:47:01.754Z info: ::1 - - [22/Sep/2025:03:47:01 +0000] "PUT /api/notifications/68d06fe1b250139faf4fb3d0 HTTP/1.1" 200 250 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:47:01.794Z info: ::1 - - [22/Sep/2025:03:47:01 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 289 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:47:11.383Z info: ::1 - - [22/Sep/2025:03:47:11 +0000] "PUT /api/notifications/68d06fe1b250139faf4fb3d0/read HTTP/1.1" 200 250 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:47:11.456Z info: ::1 - - [22/Sep/2025:03:47:11 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 289 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T03:47:11.464Z info: ::1 - - [22/Sep/2025:03:47:11 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:18:45.812Z info: ::1 - - [22/Sep/2025:04:18:45 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:18:45.826Z info: ::1 - - [22/Sep/2025:04:18:45 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:34:25.810Z info: Server running in undefined mode on port 5000
+2025-09-22T04:35:03.123Z info: Server running in undefined mode on port 5000
+2025-09-22T04:35:08.232Z info: Server running in undefined mode on port 5000
+2025-09-22T04:35:33.250Z info: Server running in undefined mode on port 5000
+2025-09-22T04:36:05.205Z info: Server running in undefined mode on port 5000
+2025-09-22T04:38:33.144Z info: Server running in undefined mode on port 5000
+2025-09-22T04:39:16.536Z info: Server running in undefined mode on port 5000
+2025-09-22T04:39:20.180Z info: Server running in undefined mode on port 5000
+2025-09-22T04:39:25.109Z info: Server running in undefined mode on port 5000
+2025-09-22T04:39:53.378Z info: Server running in undefined mode on port 5000
+2025-09-22T04:39:57.878Z info: Server running in undefined mode on port 5000
+2025-09-22T04:40:37.802Z info: Server running in undefined mode on port 5000
+2025-09-22T04:44:05.780Z info: ::1 - - [22/Sep/2025:04:44:05 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:05.872Z info: ::1 - - [22/Sep/2025:04:44:05 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:05.939Z info: ::1 - - [22/Sep/2025:04:44:05 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:05.968Z info: ::1 - - [22/Sep/2025:04:44:05 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:06.012Z info: ::1 - - [22/Sep/2025:04:44:06 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:26.508Z info: ::1 - - [22/Sep/2025:04:44:26 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:26.511Z info: ::1 - - [22/Sep/2025:04:44:26 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:27.357Z info: ::1 - - [22/Sep/2025:04:44:27 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:27.371Z info: ::1 - - [22/Sep/2025:04:44:27 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:27.375Z info: ::1 - - [22/Sep/2025:04:44:27 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:27.382Z info: ::1 - - [22/Sep/2025:04:44:27 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:27.393Z info: ::1 - - [22/Sep/2025:04:44:27 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:44:27.400Z info: ::1 - - [22/Sep/2025:04:44:27 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T04:49:31.425Z info: Server running in undefined mode on port 5000
+2025-09-22T04:49:58.327Z info: Server running in undefined mode on port 5000
+2025-09-22T04:50:08.277Z info: Server running in undefined mode on port 5000
+2025-09-22T04:55:38.637Z info: Server running in undefined mode on port 5000
+2025-09-22T04:56:29.646Z info: Server running in undefined mode on port 5000
+2025-09-22T04:56:50.210Z info: Server running in undefined mode on port 5000
+2025-09-22T11:27:25.343Z info: ::1 - - [22/Sep/2025:11:27:25 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:25.361Z info: ::1 - - [22/Sep/2025:11:27:25 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:39.300Z info: ::1 - - [22/Sep/2025:11:27:39 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:39.462Z info: ::1 - - [22/Sep/2025:11:27:39 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:39.484Z info: ::1 - - [22/Sep/2025:11:27:39 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:39.594Z info: ::1 - - [22/Sep/2025:11:27:39 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:39.650Z info: ::1 - - [22/Sep/2025:11:27:39 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:49.460Z info: ::1 - - [22/Sep/2025:11:27:49 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:49.491Z info: ::1 - - [22/Sep/2025:11:27:49 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:49.500Z info: ::1 - - [22/Sep/2025:11:27:49 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:49.517Z info: ::1 - - [22/Sep/2025:11:27:49 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:49.542Z info: ::1 - - [22/Sep/2025:11:27:49 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:27:49.551Z info: ::1 - - [22/Sep/2025:11:27:49 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:28:07.630Z info: ::1 - - [22/Sep/2025:11:28:07 +0000] "PUT /api/notifications/68d06fe1b250139faf4fb3d0/read HTTP/1.1" 200 276 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:28:07.701Z info: ::1 - - [22/Sep/2025:11:28:07 +0000] "GET /api/notifications/admin/all HTTP/1.1" 200 315 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T11:28:07.707Z info: ::1 - - [22/Sep/2025:11:28:07 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T12:19:45.491Z info: ::1 - - [22/Sep/2025:12:19:45 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T12:19:45.513Z info: ::1 - - [22/Sep/2025:12:19:45 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T12:34:13.185Z info: ::1 - - [22/Sep/2025:12:34:13 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T12:34:13.207Z info: ::1 - - [22/Sep/2025:12:34:13 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T12:34:18.999Z info: ::1 - - [22/Sep/2025:12:34:18 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T12:34:19.034Z info: ::1 - - [22/Sep/2025:12:34:19 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T12:34:35.394Z info: ::1 - - [22/Sep/2025:12:34:35 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T12:34:35.527Z info: ::1 - - [22/Sep/2025:12:34:35 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T12:34:35.550Z info: ::1 - - [22/Sep/2025:12:34:35 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T12:34:35.615Z info: ::1 - - [22/Sep/2025:12:34:35 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T12:34:35.653Z info: ::1 - - [22/Sep/2025:12:34:35 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:09:59.707Z info: ::1 - - [22/Sep/2025:14:09:59 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:09:59.751Z info: ::1 - - [22/Sep/2025:14:09:59 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:10:07.543Z info: ::1 - - [22/Sep/2025:14:10:07 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:10:07.579Z info: ::1 - - [22/Sep/2025:14:10:07 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:32:51.217Z info: ::1 - - [22/Sep/2025:14:32:51 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:32:51.223Z info: ::1 - - [22/Sep/2025:14:32:51 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:32:51.942Z info: ::1 - - [22/Sep/2025:14:32:51 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:32:51.955Z info: ::1 - - [22/Sep/2025:14:32:51 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:36:58.511Z info: ::1 - - [22/Sep/2025:14:36:58 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:36:58.519Z info: ::1 - - [22/Sep/2025:14:36:58 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:36:58.827Z info: ::1 - - [22/Sep/2025:14:36:58 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T14:36:58.839Z info: ::1 - - [22/Sep/2025:14:36:58 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T16:06:10.968Z info: ::1 - - [22/Sep/2025:16:06:10 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T16:06:10.984Z info: ::1 - - [22/Sep/2025:16:06:10 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T16:06:11.804Z info: ::1 - - [22/Sep/2025:16:06:11 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T16:06:11.861Z info: ::1 - - [22/Sep/2025:16:06:11 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T16:29:49.368Z info: ::1 - - [22/Sep/2025:16:29:49 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T16:29:49.631Z info: ::1 - - [22/Sep/2025:16:29:49 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T16:29:49.649Z info: ::1 - - [22/Sep/2025:16:29:49 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T16:29:49.775Z info: ::1 - - [22/Sep/2025:16:29:49 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T16:29:49.851Z info: ::1 - - [22/Sep/2025:16:29:49 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T17:37:19.371Z info: ::1 - - [22/Sep/2025:17:37:19 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T17:37:19.395Z info: ::1 - - [22/Sep/2025:17:37:19 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T17:37:20.162Z info: ::1 - - [22/Sep/2025:17:37:20 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T17:37:20.172Z info: ::1 - - [22/Sep/2025:17:37:20 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:48:54.329Z info: ::1 - - [22/Sep/2025:18:48:54 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:48:54.389Z info: ::1 - - [22/Sep/2025:18:48:54 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:48:54.402Z info: ::1 - - [22/Sep/2025:18:48:54 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:48:54.453Z info: ::1 - - [22/Sep/2025:18:48:54 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:48:54.481Z info: ::1 - - [22/Sep/2025:18:48:54 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:48:58.364Z info: ::1 - - [22/Sep/2025:18:48:58 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:48:58.372Z info: ::1 - - [22/Sep/2025:18:48:58 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:48:58.374Z info: ::1 - - [22/Sep/2025:18:48:58 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:48:58.384Z info: ::1 - - [22/Sep/2025:18:48:58 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:48:58.402Z info: ::1 - - [22/Sep/2025:18:48:58 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:48:58.414Z info: ::1 - - [22/Sep/2025:18:48:58 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:49:02.405Z info: ::1 - - [22/Sep/2025:18:49:02 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:49:02.407Z info: ::1 - - [22/Sep/2025:18:49:02 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:49:05.615Z info: ::1 - - [22/Sep/2025:18:49:05 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:49:05.621Z info: ::1 - - [22/Sep/2025:18:49:05 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:49:06.402Z info: ::1 - - [22/Sep/2025:18:49:06 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:49:06.411Z info: ::1 - - [22/Sep/2025:18:49:06 +0000] "GET /api/admin/tasks HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:37.356Z info: ::1 - - [22/Sep/2025:18:50:37 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:37.365Z info: ::1 - - [22/Sep/2025:18:50:37 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:38.126Z info: ::1 - - [22/Sep/2025:18:50:38 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:38.129Z info: ::1 - - [22/Sep/2025:18:50:38 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:39.012Z info: ::1 - - [22/Sep/2025:18:50:39 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:39.017Z info: ::1 - - [22/Sep/2025:18:50:39 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:39.020Z info: ::1 - - [22/Sep/2025:18:50:39 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:39.024Z info: ::1 - - [22/Sep/2025:18:50:39 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:39.036Z info: ::1 - - [22/Sep/2025:18:50:39 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:39.040Z info: ::1 - - [22/Sep/2025:18:50:39 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:39.951Z info: ::1 - - [22/Sep/2025:18:50:39 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:39.970Z info: ::1 - - [22/Sep/2025:18:50:39 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:44.143Z info: ::1 - - [22/Sep/2025:18:50:44 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:44.153Z info: ::1 - - [22/Sep/2025:18:50:44 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:47.720Z info: ::1 - - [22/Sep/2025:18:50:47 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:47.724Z info: ::1 - - [22/Sep/2025:18:50:47 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:49.651Z info: ::1 - - [22/Sep/2025:18:50:49 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:49.659Z info: ::1 - - [22/Sep/2025:18:50:49 +0000] "GET /api/users HTTP/1.1" 404 56 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:49.663Z info: ::1 - - [22/Sep/2025:18:50:49 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:49.665Z info: ::1 - - [22/Sep/2025:18:50:49 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:49.682Z info: ::1 - - [22/Sep/2025:18:50:49 +0000] "GET /api/notifications/admin/all HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:50:49.684Z info: ::1 - - [22/Sep/2025:18:50:49 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T18:59:31.735Z info: Server running in undefined mode on port 5000
+2025-09-22T18:59:47.779Z info: Server running in undefined mode on port 5000
+2025-09-22T19:00:16.414Z info: ::1 - - [22/Sep/2025:19:00:16 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 404 96 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T19:00:16.443Z info: ::1 - - [22/Sep/2025:19:00:16 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T19:00:16.453Z info: ::1 - - [22/Sep/2025:19:00:16 +0000] "GET /api/notifications/users HTTP/1.1" 200 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:17:03.335Z info: Server running in undefined mode on port 5000
+2025-09-22T23:17:51.178Z info: Server running in undefined mode on port 5000
+2025-09-22T23:24:14.942Z info: Server running in undefined mode on port 5000
+2025-09-22T23:28:24.461Z info: ::1 - - [22/Sep/2025:23:28:24 +0000] "GET /api/notifications/users HTTP/1.1" 200 563 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:28:24.482Z info: ::1 - - [22/Sep/2025:23:28:24 +0000] "GET /api/notifications/stats HTTP/1.1" 200 47 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:28:24.500Z info: ::1 - - [22/Sep/2025:23:28:24 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 200 498 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:11.227Z info: ::1 - - [22/Sep/2025:23:29:11 +0000] "POST /api/notifications/send HTTP/1.1" 201 456 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:11.331Z info: ::1 - - [22/Sep/2025:23:29:11 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:11.349Z info: ::1 - - [22/Sep/2025:23:29:11 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 200 934 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:16.311Z info: ::1 - - [22/Sep/2025:23:29:16 +0000] "PUT /api/notifications/68d1dbc77c019fc1917f0275/read HTTP/1.1" 404 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:27.818Z info: ::1 - - [22/Sep/2025:23:29:27 +0000] "PUT /api/notifications/68d06fe1b250139faf4fb3d0/unread HTTP/1.1" 404 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:36.336Z info: ::1 - - [22/Sep/2025:23:29:36 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:45.091Z info: ::1 - - [22/Sep/2025:23:29:45 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20&type=warning HTTP/1.1" 200 78 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:45.100Z info: ::1 - - [22/Sep/2025:23:29:45 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:45.107Z info: ::1 - - [22/Sep/2025:23:29:45 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:47.643Z info: ::1 - - [22/Sep/2025:23:29:47 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:47.653Z info: ::1 - - [22/Sep/2025:23:29:47 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:47.681Z info: ::1 - - [22/Sep/2025:23:29:47 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20&type=info HTTP/1.1" 200 498 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:50.931Z info: ::1 - - [22/Sep/2025:23:29:50 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:50.948Z info: ::1 - - [22/Sep/2025:23:29:50 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:50.957Z info: ::1 - - [22/Sep/2025:23:29:50 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 200 498 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:54.445Z info: ::1 - - [22/Sep/2025:23:29:54 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:54.454Z info: ::1 - - [22/Sep/2025:23:29:54 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:54.461Z info: ::1 - - [22/Sep/2025:23:29:54 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:56.431Z info: ::1 - - [22/Sep/2025:23:29:56 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:56.440Z info: ::1 - - [22/Sep/2025:23:29:56 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:29:56.447Z info: ::1 - - [22/Sep/2025:23:29:56 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:30:04.609Z info: ::1 - - [22/Sep/2025:23:30:04 +0000] "DELETE /api/notifications/68d06fe1b250139faf4fb3d0 HTTP/1.1" 200 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:30:04.693Z info: ::1 - - [22/Sep/2025:23:30:04 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 200 78 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:30:04.700Z info: ::1 - - [22/Sep/2025:23:30:04 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:30:47.831Z info: ::1 - - [22/Sep/2025:23:30:47 +0000] "POST /api/notifications/send HTTP/1.1" 201 455 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:30:47.876Z info: ::1 - - [22/Sep/2025:23:30:47 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:30:47.883Z info: ::1 - - [22/Sep/2025:23:30:47 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 200 513 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:31:01.048Z info: ::1 - - [22/Sep/2025:23:31:01 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:31:07.066Z info: ::1 - - [22/Sep/2025:23:31:07 +0000] "PUT /api/notifications/68d1dc277c019fc1917f02c2/read HTTP/1.1" 404 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:31:31.223Z info: ::1 - - [22/Sep/2025:23:31:31 +0000] "PUT /api/notifications/68d1dc277c019fc1917f02c2 HTTP/1.1" 200 458 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:31:31.278Z info: ::1 - - [22/Sep/2025:23:31:31 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 200 513 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:50:08.115Z info: ::1 - - [22/Sep/2025:23:50:08 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:50:16.473Z info: ::1 - - [22/Sep/2025:23:50:16 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:50:16.478Z info: ::1 - - [22/Sep/2025:23:50:16 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:50:17.338Z info: ::1 - - [22/Sep/2025:23:50:17 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:50:17.344Z info: ::1 - - [22/Sep/2025:23:50:17 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:50:17.379Z info: ::1 - - [22/Sep/2025:23:50:17 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:50:17.437Z info: ::1 - - [22/Sep/2025:23:50:17 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:50:17.449Z info: ::1 - - [22/Sep/2025:23:50:17 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:50:17.462Z info: ::1 - - [22/Sep/2025:23:50:17 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-22T23:51:56.473Z info: ::1 - - [22/Sep/2025:23:51:56 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T03:51:53.034Z info: ::1 - - [23/Sep/2025:03:51:53 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T03:51:53.047Z info: ::1 - - [23/Sep/2025:03:51:53 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:01:45.077Z info: ::1 - - [23/Sep/2025:04:01:45 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:01:45.232Z info: ::1 - - [23/Sep/2025:04:01:45 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:01:45.248Z info: ::1 - - [23/Sep/2025:04:01:45 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:01:45.331Z info: ::1 - - [23/Sep/2025:04:01:45 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:01:45.404Z info: ::1 - - [23/Sep/2025:04:01:45 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:08.461Z info: ::1 - - [23/Sep/2025:04:02:08 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:08.484Z info: ::1 - - [23/Sep/2025:04:02:08 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:08.508Z info: ::1 - - [23/Sep/2025:04:02:08 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:08.552Z info: ::1 - - [23/Sep/2025:04:02:08 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:08.573Z info: ::1 - - [23/Sep/2025:04:02:08 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:08.593Z info: ::1 - - [23/Sep/2025:04:02:08 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:15.157Z info: ::1 - - [23/Sep/2025:04:02:15 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:15.167Z info: ::1 - - [23/Sep/2025:04:02:15 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:17.689Z info: ::1 - - [23/Sep/2025:04:02:17 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:17.714Z info: ::1 - - [23/Sep/2025:04:02:17 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:21.050Z info: ::1 - - [23/Sep/2025:04:02:21 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:21.065Z info: ::1 - - [23/Sep/2025:04:02:21 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:21.084Z info: ::1 - - [23/Sep/2025:04:02:21 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:21.131Z info: ::1 - - [23/Sep/2025:04:02:21 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:21.149Z info: ::1 - - [23/Sep/2025:04:02:21 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:21.171Z info: ::1 - - [23/Sep/2025:04:02:21 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:21.868Z info: ::1 - - [23/Sep/2025:04:02:21 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:21.883Z info: ::1 - - [23/Sep/2025:04:02:21 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:49.379Z info: ::1 - - [23/Sep/2025:04:02:49 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:49.411Z info: ::1 - - [23/Sep/2025:04:02:49 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:50.208Z info: ::1 - - [23/Sep/2025:04:02:50 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:50.286Z info: ::1 - - [23/Sep/2025:04:02:50 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:51.028Z info: ::1 - - [23/Sep/2025:04:02:51 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:51.055Z info: ::1 - - [23/Sep/2025:04:02:51 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:51.983Z info: ::1 - - [23/Sep/2025:04:02:51 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:51.990Z info: ::1 - - [23/Sep/2025:04:02:51 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:53.097Z info: ::1 - - [23/Sep/2025:04:02:53 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:53.111Z info: ::1 - - [23/Sep/2025:04:02:53 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:53.132Z info: ::1 - - [23/Sep/2025:04:02:53 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:53.176Z info: ::1 - - [23/Sep/2025:04:02:53 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:53.196Z info: ::1 - - [23/Sep/2025:04:02:53 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:53.224Z info: ::1 - - [23/Sep/2025:04:02:53 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:02:57.568Z info: ::1 - - [23/Sep/2025:04:02:57 +0000] "PUT /api/notifications/68d1dc277c019fc1917f02c2/read HTTP/1.1" 404 53 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:04:16.746Z info: ::1 - - [23/Sep/2025:04:04:16 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:04:16.817Z info: ::1 - - [23/Sep/2025:04:04:16 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:04:51.444Z info: ::1 - - [23/Sep/2025:04:04:51 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:04:51.454Z info: ::1 - - [23/Sep/2025:04:04:51 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:04:51.466Z info: ::1 - - [23/Sep/2025:04:04:51 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:04:51.494Z info: ::1 - - [23/Sep/2025:04:04:51 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:04:51.507Z info: ::1 - - [23/Sep/2025:04:04:51 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:04:51.520Z info: ::1 - - [23/Sep/2025:04:04:51 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:05:15.151Z info: SIGINT received, shutting down gracefully
+2025-09-23T04:08:00.235Z info: Server running in undefined mode on port 5000
+2025-09-23T04:08:01.561Z info: ::1 - - [23/Sep/2025:04:08:01 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:01.586Z info: ::1 - - [23/Sep/2025:04:08:01 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:13.545Z info: ::1 - - [23/Sep/2025:04:08:13 +0000] "POST /api/auth/login HTTP/1.1" 401 33 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:27.824Z info: ::1 - - [23/Sep/2025:04:08:27 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:27.976Z info: ::1 - - [23/Sep/2025:04:08:27 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:27.992Z info: ::1 - - [23/Sep/2025:04:08:27 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:28.084Z info: ::1 - - [23/Sep/2025:04:08:28 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:28.123Z info: ::1 - - [23/Sep/2025:04:08:28 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:33.436Z info: ::1 - - [23/Sep/2025:04:08:33 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:33.444Z info: ::1 - - [23/Sep/2025:04:08:33 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:33.455Z info: ::1 - - [23/Sep/2025:04:08:33 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:33.484Z info: ::1 - - [23/Sep/2025:04:08:33 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:33.504Z info: ::1 - - [23/Sep/2025:04:08:33 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:33.521Z info: ::1 - - [23/Sep/2025:04:08:33 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:36.763Z info: ::1 - - [23/Sep/2025:04:08:36 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:36.831Z info: ::1 - - [23/Sep/2025:04:08:36 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:51.369Z info: ::1 - - [23/Sep/2025:04:08:51 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:51.372Z info: ::1 - - [23/Sep/2025:04:08:51 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:51.378Z info: ::1 - - [23/Sep/2025:04:08:51 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:51.412Z info: ::1 - - [23/Sep/2025:04:08:51 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:51.424Z info: ::1 - - [23/Sep/2025:04:08:51 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:51.441Z info: ::1 - - [23/Sep/2025:04:08:51 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:51.969Z info: ::1 - - [23/Sep/2025:04:08:51 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:51.980Z info: ::1 - - [23/Sep/2025:04:08:51 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:53.602Z info: ::1 - - [23/Sep/2025:04:08:53 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:53.624Z info: ::1 - - [23/Sep/2025:04:08:53 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:58.377Z info: ::1 - - [23/Sep/2025:04:08:58 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:58.393Z info: ::1 - - [23/Sep/2025:04:08:58 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:58.415Z info: ::1 - - [23/Sep/2025:04:08:58 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:58.457Z info: ::1 - - [23/Sep/2025:04:08:58 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:58.484Z info: ::1 - - [23/Sep/2025:04:08:58 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:08:58.503Z info: ::1 - - [23/Sep/2025:04:08:58 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:09:01.078Z info: ::1 - - [23/Sep/2025:04:09:01 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:09:01.091Z info: ::1 - - [23/Sep/2025:04:09:01 +0000] "GET /api/admin/reports HTTP/1.1" 401 62 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:14:00.357Z info: ::1 - - [23/Sep/2025:04:14:00 +0000] "GET /api/admin/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:14:00.362Z info: ::1 - - [23/Sep/2025:04:14:00 +0000] "GET /api/reports/admin? HTTP/1.1" 200 39 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:15:42.433Z info: ::1 - - [23/Sep/2025:04:15:42 +0000] "GET /api/reports/admin?type=daily HTTP/1.1" 200 39 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:30:29.322Z info: Server running in undefined mode on port 5000
+2025-09-23T04:31:14.772Z info: ::1 - - [23/Sep/2025:04:31:14 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:14.791Z info: ::1 - - [23/Sep/2025:04:31:14 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:26.929Z info: ::1 - - [23/Sep/2025:04:31:26 +0000] "POST /api/auth/login HTTP/1.1" 200 268 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:27.130Z info: ::1 - - [23/Sep/2025:04:31:27 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:27.157Z info: ::1 - - [23/Sep/2025:04:31:27 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:27.250Z info: ::1 - - [23/Sep/2025:04:31:27 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:27.305Z info: ::1 - - [23/Sep/2025:04:31:27 +0000] "GET /api/admin/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:30.800Z info: ::1 - - [23/Sep/2025:04:31:30 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:30.828Z info: ::1 - - [23/Sep/2025:04:31:30 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:30.861Z info: ::1 - - [23/Sep/2025:04:31:30 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:30.917Z info: ::1 - - [23/Sep/2025:04:31:30 +0000] "GET /api/notifications/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:30.942Z info: ::1 - - [23/Sep/2025:04:31:30 +0000] "GET /api/notifications/stats HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:30.955Z info: ::1 - - [23/Sep/2025:04:31:30 +0000] "GET /api/admin/notifications/admin/all?page=1&limit=20 HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:34.779Z info: ::1 - - [23/Sep/2025:04:31:34 +0000] "GET /api/reports/admin? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:34.794Z info: ::1 - - [23/Sep/2025:04:31:34 +0000] "GET /api/reports/users HTTP/1.1" 200 694 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:34.809Z info: ::1 - - [23/Sep/2025:04:31:34 +0000] "GET /api/reports/admin? HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:31:34.822Z info: ::1 - - [23/Sep/2025:04:31:34 +0000] "GET /api/reports/users HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
+2025-09-23T04:33:31.929Z info: ::1 - - [23/Sep/2025:04:33:31 +0000] "POST /api/reports HTTP/1.1" 500 148 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
