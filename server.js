@@ -15,7 +15,7 @@ import { logger } from "./utils/logger.js";
 
 // Routes
 import authRoutes from "./routes/authRoutes.js";
-import projectRoutes from "./routes/projectRoutes.js";
+import projectRoutes from "./routes/ProjectRoutes.js";
 import taskRoutes from "./routes/taskRoutes.js";
 import assetRoutes from "./routes/assetRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
@@ -150,3 +150,4 @@ app.listen(PORT, () => {
     `🚀 Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
   );
 });
+
