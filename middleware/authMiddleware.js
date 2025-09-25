@@ -55,3 +55,44 @@ export const authorizeRoles = (...roles) => {
     next();
   };
 };
+
+export default { protect, authorizeRoles };
+
+// Optional: Team Lead specific middleware for additional validation
+export const requireTeamLead = (req, res, next) => {
+  if (req.user && req.user.role === 'teamlead') {
+    next();
+  } else {
+    res.status(403).json({
+      success: false,
+      message: 'Access denied. Team Lead role required.'
+    });
+  }
+};
+
+// Optional: Project ownership validation middleware
+export const validateProjectOwnership = async (req, res, next) => {
+  try {
+    const { projectId } = req.params;
+    const project = await Project.findOne({
+      _id: projectId,
+      teamLead: req.user._id
+    });
+
+    if (!project) {
+      return res.status(404).json({
+        success: false,
+        message: 'Project not found or you are not the team lead for this project'
+      });
+    }
+
+    req.project = project;
+    next();
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: 'Error validating project ownership',
+      error: error.message
+    });
+  }
+};

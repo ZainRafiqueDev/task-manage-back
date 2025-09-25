@@ -525,25 +525,41 @@ export const submitReport = async (req, res) => {
     const { forwardToIds } = req.body;
 
     if (!Array.isArray(forwardToIds) || forwardToIds.length === 0) {
-      return res.status(400).json({ 
-        success: false, 
-        message: "At least one recipient is required" 
+      return res.status(400).json({
+        success: false,
+        message: "At least one recipient is required"
       });
     }
 
-    const report = await Report.findById(reportId);
+    const report = await Report.findById(reportId).populate("createdBy");
     if (!report) {
-      return res.status(404).json({ 
-        success: false, 
-        message: "Report not found" 
+      return res.status(404).json({
+        success: false,
+        message: "Report not found"
       });
     }
 
     // Authorization check
-    if (report.createdBy.toString() !== req.user._id.toString() && req.user.role !== "admin") {
-      return res.status(403).json({ 
-        success: false, 
-        message: "Not authorized to submit this report" 
+    const userId = req.user._id.toString();
+    const isCreator = report.createdBy._id.toString() === userId;
+    const isAdmin = req.user.role === "admin";
+    const isTeamlead = req.user.role === "teamlead";
+
+    // Allow: 
+    //  - creator themselves
+    //  - admin
+    //  - teamlead submitting an employee’s report
+    if (
+      !isCreator &&
+      !isAdmin &&
+      !(
+        isTeamlead &&
+        report.createdBy.role === "employee"
+      )
+    ) {
+      return res.status(403).json({
+        success: false,
+        message: "Not authorized to submit this report"
       });
     }
 
@@ -554,55 +570,49 @@ export const submitReport = async (req, res) => {
         allowedRoles = ["teamlead"];
         break;
       case "teamlead":
+        // teamlead can forward own reports to admin
+        // and also forward employee reports to admin
         allowedRoles = ["admin"];
         break;
       case "admin":
         allowedRoles = ["teamlead", "employee"];
         break;
       default:
-        return res.status(403).json({ 
-          success: false, 
-          message: "Not authorized to submit reports" 
+        return res.status(403).json({
+          success: false,
+          message: "Not authorized to submit reports"
         });
     }
 
     // Validate recipients
-    const recipients = await User.find({ _id: { $in: forwardToIds } });
-    if (recipients.length !== forwardToIds.length) {
-      return res.status(404).json({ 
-        success: false, 
-        message: "One or more recipients not found" 
-      });
-    }
+    const invalidRecipients = await User.find({
+      _id: { $in: forwardToIds },
+      role: { $nin: allowedRoles }
+    });
 
-    const invalidRecipients = recipients.filter(r => !allowedRoles.includes(r.role));
     if (invalidRecipients.length > 0) {
-      return res.status(403).json({ 
-        success: false, 
-        message: `You can only submit to: ${allowedRoles.join(", ")}` 
+      return res.status(400).json({
+        success: false,
+        message: `Invalid recipients for your role. Allowed roles: ${allowedRoles.join(", ")}`
       });
     }
 
     // Update report status
+    report.forwardedTo = forwardToIds;
     report.status = "submitted";
     await report.save();
 
-    const updatedReport = await Report.findById(reportId)
-      .populate("createdBy", "name email role")
-      .populate("forUser", "name email role")
-      .populate("feedbacks.givenBy", "name email role");
-
-    res.status(200).json({
+    return res.status(200).json({
       success: true,
-      message: `Report submitted to ${recipients.map(r => r.name).join(", ")}`,
-      report: updatedReport,
+      message: "Report submitted successfully",
+      report
     });
-  } catch (err) {
-    console.error("SubmitReport Error:", err);
-    res.status(500).json({ 
-      success: false, 
-      message: "Error submitting report", 
-      error: err.message 
+
+  } catch (error) {
+    console.error("Submit Report Error:", error);
+    return res.status(500).json({
+      success: false,
+      message: "Server error while submitting report"
     });
   }
 };
@@ -674,6 +684,98 @@ export const submitDailyReport = async (req, res) => {
       success: false, 
       message: "Error submitting daily report", 
       error: err.message 
+    });
+  }
+};
+// Add this to your reportController.js
+
+export const submitToHierarchy = async (req, res) => {
+  try {
+    const { reportId } = req.params;
+    const currentUser = req.user;
+
+    const report = await Report.findById(reportId).populate("createdBy");
+    if (!report) {
+      return res.status(404).json({
+        success: false,
+        message: "Report not found"
+      });
+    }
+
+    // Authorization check - only report creator or authorized roles can submit
+    const userId = currentUser._id.toString();
+    const isCreator = report.createdBy._id.toString() === userId;
+    const isTeamlead = currentUser.role === "teamlead";
+    const isAdmin = currentUser.role === "admin";
+
+    if (!isCreator && !isTeamlead && !isAdmin) {
+      return res.status(403).json({
+        success: false,
+        message: "Not authorized to submit this report"
+      });
+    }
+
+    // Determine target role based on current user's role
+    let targetRole;
+    if (currentUser.role === "employee") {
+      targetRole = "teamlead";
+    } else if (currentUser.role === "teamlead") {
+      targetRole = "admin";
+    } else {
+      return res.status(400).json({
+        success: false,
+        message: "Admin users cannot submit reports up the hierarchy"
+      });
+    }
+
+    // Find users with the target role
+    const recipients = await User.find({ 
+      role: targetRole,
+      isActive: { $ne: false } // Exclude deactivated users if you have this field
+    }).select("_id name email role");
+
+    if (recipients.length === 0) {
+      return res.status(400).json({
+        success: false,
+        message: `No active ${targetRole} found to submit to. Please contact your administrator.`
+      });
+    }
+
+    // Update report
+    const forwardToIds = recipients.map(r => r._id);
+    report.forwardedTo = forwardToIds;
+    report.status = "submitted";
+    report.submittedAt = new Date();
+    
+    // Add submission history
+    if (!report.submissionHistory) {
+      report.submissionHistory = [];
+    }
+    report.submissionHistory.push({
+      submittedBy: currentUser._id,
+      submittedTo: forwardToIds,
+      submittedAt: new Date(),
+      fromRole: currentUser.role,
+      toRole: targetRole
+    });
+
+    await report.save();
+
+    return res.status(200).json({
+      success: true,
+      message: `Report submitted to ${recipients.map(r => r.name).join(", ")} successfully`,
+      report: {
+        _id: report._id,
+        status: report.status,
+        submittedTo: recipients.map(r => ({ _id: r._id, name: r.name, role: r.role }))
+      }
+    });
+
+  } catch (error) {
+    console.error("Submit to Hierarchy Error:", error);
+    return res.status(500).json({
+      success: false,
+      message: "Server error while submitting report"
     });
   }
 };
