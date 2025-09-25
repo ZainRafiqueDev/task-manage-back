@@ -13,22 +13,19 @@ import {
   submitReport,
   submitDailyReport,
   getUsersForReports,
+  submitToHierarchy
 } from "../controllers/reportController.js";
 import { protect, authorizeRoles } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
-// All routes require authentication
+
 router.use(protect);
 
-// ========================
-// User Data Routes
-// ========================
+
 router.get("/users", authorizeRoles("teamlead", "admin"), getUsersForReports); // Get users for report assignment
 
-// ========================
-// Employee & TeamLead
-// ========================
+
 router.get("/me", getMyReports);                 // Logged-in user's reports
 // Create daily/monthly report (Employee, TeamLead, Admin)
 router.post("/", authorizeRoles("employee", "teamlead", "admin"), createReport);
@@ -36,14 +33,10 @@ router.post("/", authorizeRoles("employee", "teamlead", "admin"), createReport);
 router.put("/:reportId", updateReport);          // Update your own report
 router.delete("/:reportId", deleteReport);       // Delete your own report
 
-// ========================
-// Daily Reports (Employee)
-// ========================
+
 router.post("/daily/submit", authorizeRoles("employee"), submitDailyReport); // Submit daily report
 
-// ========================
-// TeamLead & Admin
-// ========================
+
 router.get(
   "/user/:userId",
   authorizeRoles("teamlead", "admin"),
@@ -74,9 +67,13 @@ router.post(
   submitReport
 ); // Submit report to next level
 
-// ========================
-// Admin only
-// ========================
+// Add this route after your existing routes
+router.post(
+  "/:reportId/submit-to-hierarchy",
+  authorizeRoles("employee", "teamlead"),
+  submitToHierarchy
+); // Submit report up the hierarchy chain
+
 router.get("/admin", authorizeRoles("admin"), getReportsForAdmin); // Get all reports (with filters)
 
 export default router;

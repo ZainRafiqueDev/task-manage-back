@@ -1,28 +1,25 @@
 // routes/authRoutes.js
 import express from "express";
-import { 
-  register, 
-  login, 
-  logout, 
-  forgotPassword, 
-  resetPassword ,
-  getMe
+import {
+  register,
+  login,
+  logout,
+  forgotPassword,
+  resetPassword,
+  getMe,
 } from "../controllers/authController.js";
 import { protect } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
-// ==========================
 // Public routes
-// ==========================
-router.post("/register", register);        // New user registration
-router.post("/login", login);              // User login
-router.post("/forgot-password", forgotPassword); // Generate reset token
-router.put("/reset-password/:token", resetPassword); // Reset password
-router.get("/me", protect, getMe);  
-// ==========================
+router.post("/register", register);
+router.post("/login", login);
+router.post("/forgot-password", forgotPassword);
+router.put("/reset-password/:token", resetPassword);
+
 // Protected routes
-// ==========================
-router.post("/logout", protect, logout);   // Logout (requires login)
+router.get("/me", protect, getMe);
+router.post("/logout", protect, logout);
 
 export default router;

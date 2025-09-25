@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 
 /* ---------------------------- SUB-SCHEMAS ---------------------------- */
 
+
 // Time entry for hourly projects
 const timeEntrySchema = new mongoose.Schema({
   date: { type: Date, required: true },
@@ -110,7 +111,52 @@ const projectSchema = new mongoose.Schema({
   technologies: [String],
 
   createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
-  updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" }
+  updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  // Add these fields to your Project schema (models/Project.js)
+
+
+  // ... existing fields ...
+  
+  // Team Lead assignment
+  teamLead: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: false // Optional - projects can exist without team leads
+  },
+  
+  // When the project was picked by a team lead
+  pickedAt: {
+    type: Date,
+    required: false
+  },
+  
+  // Release history tracking
+  releaseHistory: [{
+    releasedBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
+      required: true
+    },
+    releasedAt: {
+      type: Date,
+      required: true
+    },
+    reason: {
+      type: String,
+      required: false
+    }
+  }],
+  
+  // Who created this project (should be admin)
+  createdBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
+  
+  // ... rest of existing fields ...
+  
+
 }, { timestamps: true });
 
 /* ---------------------- METHODS ---------------------- */
@@ -221,5 +267,36 @@ export const ProjectGroup = mongoose.model(
     createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }
   }, { timestamps: true })
 );
+// (use your full Project.js content; add the following snippets into it)
+
+// Ensure employees array uniqueness via pre-save:
+projectSchema.pre("save", function (next) {
+  if (Array.isArray(this.employees)) {
+    this.employees = [...new Set(this.employees.map((id) => id.toString()))];
+  }
+  next();
+});
+
+// Virtual: task counts by status (counts tasks subdocuments if embedded)
+projectSchema.virtual("taskSummary").get(function () {
+  const summary = { pending: 0, "in-progress": 0, completed: 0, review: 0, blocked: 0 };
+  if (Array.isArray(this.tasks)) {
+    this.tasks.forEach((t) => {
+      const s = t.status || "pending";
+      summary[s] = (summary[s] || 0) + 1;
+    });
+  }
+  return summary;
+});
+
+// Method: return limited view for a specific employee (filters tasks)
+projectSchema.methods.forEmployee = function (employeeId) {
+  const obj = this.toObject();
+  // If tasks are embedded:
+  if (Array.isArray(obj.tasks)) {
+    obj.tasks = obj.tasks.filter((t) => String(t.assignedTo) === String(employeeId));
+  }
+  return obj;
+};
 
 export default Project;

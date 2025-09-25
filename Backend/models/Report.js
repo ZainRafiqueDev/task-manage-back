@@ -6,28 +6,44 @@ import mongoose from "mongoose";
 // ----------------------
 const feedbackSchema = new mongoose.Schema(
   {
-    givenBy: {
+    givenBy: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }, // Admin or TeamLead
+    role: { type: String, enum: ["admin", "teamlead"], required: true },
+    comment: { type: String, required: true, trim: true },
+    rating: { type: Number, min: 1, max: 5 }, // Optional rating
+  },
+  { timestamps: true }
+);
+
+// ----------------------
+// Submission History Subdocument
+// ----------------------
+const submissionHistorySchema = new mongoose.Schema(
+  {
+    submittedBy: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
-      required: true, // Admin or TeamLead
+      required: true
     },
-    role: {
+    submittedTo: [{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User"
+    }],
+    submittedAt: {
+      type: Date,
+      default: Date.now
+    },
+    fromRole: {
       type: String,
-      enum: ["admin", "teamlead"],
-      required: true,
+      enum: ["employee", "teamlead", "admin"],
+      required: true
     },
-    comment: {
+    toRole: {
       type: String,
-      required: true,
-      trim: true,
-    },
-    rating: {
-      type: Number,
-      min: 1,
-      max: 5,
-    }, // Optional rating
+      enum: ["employee", "teamlead", "admin"],
+      required: true
+    }
   },
-  { timestamps: true } // tracks createdAt & updatedAt for feedback
+  { _id: true }
 );
 
 // ----------------------
@@ -35,42 +51,15 @@ const feedbackSchema = new mongoose.Schema(
 // ----------------------
 const reportSchema = new mongoose.Schema(
   {
-    type: {
-      type: String,
-      enum: ["daily", "monthly"],
-      required: true,
-    },
+    type: { type: String, enum: ["daily", "monthly"], required: true },
 
-    // Who made this report
-    createdBy: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-      required: true,
-    },
+    createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+    forUser: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
 
-    // If the report is about a specific employee
-    forUser: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-    },
+    content: { type: String, required: true, trim: true },
 
-    // Report content
-    content: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-
-    tasksCompleted: {
-      type: Number,
-      default: 0,
-      min: 0,
-    },
-    tasksPending: {
-      type: Number,
-      default: 0,
-      min: 0,
-    },
+    tasksCompleted: { type: Number, default: 0, min: 0 },
+    tasksPending: { type: Number, default: 0, min: 0 },
 
     projectStats: {
       done: { type: Number, default: 0, min: 0 },
@@ -78,38 +67,96 @@ const reportSchema = new mongoose.Schema(
       selected: { type: Number, default: 0, min: 0 },
     },
 
-    // Completion status (teamlead marks employee reports, admin marks teamlead reports)
     completionStatus: {
       type: String,
       enum: ["pending", "complete", "incomplete"],
       default: "pending",
     },
 
-    // Feedback from team lead or admin
     feedbacks: [feedbackSchema],
 
-    // Status of the report workflow
     status: {
       type: String,
       enum: ["submitted", "reviewed", "approved"],
       default: "submitted",
     },
 
-    // For linking monthly summary
-    parentReport: {
+    parentReport: { type: mongoose.Schema.Types.ObjectId, ref: "Report" },
+
+    // Submission and forwarding fields
+    forwardedTo: [{
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Report",
-    },
+      ref: "User"
+    }],
+    submittedAt: { type: Date },
+    submissionHistory: [submissionHistorySchema],
+
+    // Existing fields
+    attachments: [
+      {
+        filename: String,
+        url: String,
+        uploadedBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+        uploadedAt: Date,
+      },
+    ],
+
+    reviewedBy: { type: mongoose.Schema.Types.ObjectId, ref: "User", default: null },
+    reviewedAt: Date,
   },
-  { timestamps: true } // adds createdAt & updatedAt automatically
+  { timestamps: true }
 );
 
 // ----------------------
-// Indexes for Performance
+// Indexes
 // ----------------------
 reportSchema.index({ createdBy: 1 });
 reportSchema.index({ forUser: 1 });
 reportSchema.index({ type: 1 });
 reportSchema.index({ status: 1 });
+reportSchema.index({ forwardedTo: 1 });
+reportSchema.index({ "submissionHistory.submittedBy": 1 });
+reportSchema.index({ "submissionHistory.submittedTo": 1 });
+
+// ----------------------
+// Virtual for getting current forwarded users
+// ----------------------
+reportSchema.virtual('currentForwardedUsers', {
+  ref: 'User',
+  localField: 'forwardedTo',
+  foreignField: '_id'
+});
+
+// ----------------------
+// Instance method to add submission to history
+// ----------------------
+reportSchema.methods.addSubmission = function(submittedBy, submittedTo, fromRole, toRole) {
+  if (!this.submissionHistory) {
+    this.submissionHistory = [];
+  }
+  
+  this.submissionHistory.push({
+    submittedBy,
+    submittedTo: Array.isArray(submittedTo) ? submittedTo : [submittedTo],
+    submittedAt: new Date(),
+    fromRole,
+    toRole
+  });
+  
+  this.forwardedTo = Array.isArray(submittedTo) ? submittedTo : [submittedTo];
+  this.submittedAt = new Date();
+  this.status = "submitted";
+};
+
+// ----------------------
+// Instance method to get latest submission
+// ----------------------
+reportSchema.methods.getLatestSubmission = function() {
+  if (!this.submissionHistory || this.submissionHistory.length === 0) {
+    return null;
+  }
+  
+  return this.submissionHistory[this.submissionHistory.length - 1];
+};
 
 export default mongoose.model("Report", reportSchema);

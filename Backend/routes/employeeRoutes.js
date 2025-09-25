@@ -1,48 +1,74 @@
+// routes/employeeRoutes.js
 import express from "express";
 import { protect, authorizeRoles } from "../middleware/authMiddleware.js";
 
-// Project functions
-import { getAssignedProjects } from "../controllers/ProjectController.js";
+// Import the new employee dashboard controller
+import {
+  getDashboardOverview,
+  getMyProjects,
+  getProjectDetails,
+  getMyTasks,
+  getTaskDetails,
+  logTimeOnTask,
+  updateTaskStatus,
+  addTaskResponse,
+  getMyPerformance,
+  getMyReports,
+  submitDailyReport,
+  createReport,
+  getMyNotifications,
+  getMyAssets,
+  requestAssetReturn
+} from "../controllers/employeeController.js";
 
-// Task functions
-import { 
-  getTasks, 
-  getMyAssignedTasks, 
-  logTime, 
-  markComplete, 
-  addEmployeeResponse, 
-  addLog 
-} from "../controllers/TaskController.js";
-
-// Asset functions
-import { getMyAssets, returnAsset } from "../controllers/assetController.js";
-
-// Report functions
-import { submitDailyReport, createReport, getMyReports } from "../controllers/reportController.js";
+// Import notification controllers for common operations
+import {
+  markRead,
+  markUnread,
+  bulkMarkRead,
+  markAllRead,
+  getNotificationStats,
+  sendNotification
+} from "../controllers/notifcationController.js";
 
 const router = express.Router();
 
 // Protect all routes and ensure only employees can access
 router.use(protect, authorizeRoles("employee"));
 
-/* ----------------- PROJECTS ----------------- */
-router.get("/projects", getAssignedProjects);
+/* ==================== DASHBOARD OVERVIEW ==================== */
+router.get("/dashboard", getDashboardOverview);
 
-/* ----------------- TASKS ----------------- */
-router.get("/tasks", getTasks);
-router.get("/tasks/my", getMyAssignedTasks);
-router.post("/tasks/:id/log", logTime);
-router.post("/tasks/:taskId/log", addLog);
-router.put("/tasks/:id/complete", markComplete);
-router.post("/tasks/:taskId/response",addEmployeeResponse);
+/* ==================== PROJECTS TAB ==================== */
+router.get("/projects", getMyProjects);
+router.get("/projects/:projectId", getProjectDetails);
 
-/* ----------------- ASSETS ----------------- */
-router.get("/assets", getMyAssets);
-router.put("/assets/:assetId/return", returnAsset);
+/* ==================== TASKS TAB ==================== */
+router.get("/tasks", getMyTasks);
+router.get("/tasks/:taskId", getTaskDetails);
+router.post("/tasks/:taskId/log-time", logTimeOnTask);
+router.patch("/tasks/:taskId/status", updateTaskStatus);
+router.post("/tasks/:taskId/response", addTaskResponse);
 
-/* ----------------- REPORTS ----------------- */
-router.post("/reports", submitDailyReport);
-router.post("/reports/create", createReport);
+/* ==================== PERFORMANCE TAB ==================== */
+router.get("/performance", getMyPerformance);
+
+/* ==================== REPORTS TAB ==================== */
 router.get("/reports", getMyReports);
+router.post("/reports/daily", submitDailyReport);
+router.post("/reports", createReport);
+
+/* ==================== NOTIFICATIONS ==================== */
+router.get("/notifications", getMyNotifications);
+router.get("/notifications/stats", getNotificationStats);
+router.put("/notifications/:id/read", markRead);
+router.put("/notifications/:id/unread", markUnread);
+router.put("/notifications/bulk/mark-read", bulkMarkRead);
+router.put("/notifications/mark-all-read", markAllRead);
+router.post("/notifications/send", sendNotification); // Employee can send to teamlead/admin
+
+/* ==================== ASSETS ==================== */
+router.get("/assets", getMyAssets);
+router.post("/assets/:assetId/request-return", requestAssetReturn);
 
 export default router;

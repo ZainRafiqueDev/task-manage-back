@@ -7,6 +7,8 @@ import {
   getProjectById,
   updateProject,
   deleteProject,
+  addProjectDetails,
+  getProjectDetails,
   updateProjectDetails,
   deleteProjectDetails,
   addProjectGroup,
@@ -14,12 +16,38 @@ import {
   updateProjectGroup,
   deleteProjectGroup,
   addPayment,
+  updatePayment,
+  deletePayment,
   addMilestonePayment,
   addTimeEntry,
-  updateClientStatus,
-  deletePayment,
+  updateTimeEntry,
+  deleteTimeEntry,
+  addMilestone,
+  updateMilestone,
   deleteMilestone,
-  deleteTimeEntry
+  updateClientStatus,
+  assignTeamLead,
+  assignEmployees,
+  recalculateProject,
+  getAvailableProjects,
+  getMyProjects,
+  getAssignedProjects,
+  pickProject,
+  releaseProject,
+  getProjectsWithTasks,
+  getTeamWithTasks,
+  getDashboardStats,
+  getEmployeesWithTaskStatus,
+  getTaskAssignmentOverview,
+  getEmployeeTasks,
+  getEmployeeTaskById,
+  updateEmployeeTaskStatus,
+  addEmployeeTaskResponse,
+  getEmployeeProjectDetails,
+  assignEmployeesToProject,
+  removeEmployeeFromProject,
+  getProjectAssignmentHistory,
+  getTeamLeadProjectsEnhanced
 } from "../controllers/ProjectController.js";
 
 const router = express.Router();
@@ -27,50 +55,94 @@ const router = express.Router();
 // Protect all routes
 router.use(protect);
 
-// -------------------------
-// Project CRUD (Admin Only for create/update/delete)
-// -------------------------
-router.post("/", authorizeRoles("admin"), addProject);              // Create new project
-router.get("/", getAllProjects);           // Get all projects (all roles can view)
-router.get("/:id", getProjectById);        // Get project by ID
-router.put("/:id", authorizeRoles("admin"), updateProject);         // Update project by ID
-router.delete("/:id", authorizeRoles("admin"), deleteProject);      // Delete project by ID
+// ========================================
+// TEAMLEAD DASHBOARD ROUTES (SPECIFIC ROUTES FIRST)
+// ========================================
+router.get("/teamlead/overview", authorizeRoles("teamlead"), getProjectsWithTasks);
+router.get("/teamlead/team", authorizeRoles("teamlead"), getTeamWithTasks);
+router.get("/teamlead/stats", authorizeRoles("teamlead"), getDashboardStats);
+router.get("/teamlead/employees", authorizeRoles("teamlead"), getEmployeesWithTaskStatus);
+router.get("/teamlead/tasks", authorizeRoles("teamlead"), getTaskAssignmentOverview);
+router.get('/mine', protect, getTeamLeadProjectsEnhanced); // Enhanced version of existing route
+router.put('/:projectId/assign-employees', protect, assignEmployeesToProject);
+router.delete('/:projectId/employees/:employeeId', protect, removeEmployeeFromProject);
+router.get('/:projectId/assignment-history', protect, getProjectAssignmentHistory);
 
-// -------------------------
-// Project Details CRUD
-// -------------------------
-router.put("/details/:id", authorizeRoles("admin"), updateProjectDetails);    // Update ProjectDetails
-router.delete("/details/:id", authorizeRoles("admin"), deleteProjectDetails); // Delete ProjectDetails
 
-// -------------------------
-// Project Group CRUD
-// -------------------------
-router.post("/groups", authorizeRoles("admin"), addProjectGroup);           // Create project group
-router.get("/groups", getAllProjectGroups);       // Get all project groups
-router.put("/groups/:id", authorizeRoles("admin"), updateProjectGroup);     // Update project group
-router.delete("/groups/:id", authorizeRoles("admin"), deleteProjectGroup);  // Delete project group
+// ========================================
+// PROJECT GROUPS ROUTES (SPECIFIC ROUTES FIRST)
+// ========================================
+router.post("/groups", authorizeRoles("admin"), addProjectGroup);
+router.get("/groups", authorizeRoles("admin", "teamlead"), getAllProjectGroups);
+router.put("/groups/:groupId", authorizeRoles("admin"), updateProjectGroup);
+router.delete("/groups/:groupId", authorizeRoles("admin"), deleteProjectGroup);
 
-// -------------------------
-// Project Payments
-// -------------------------
-router.post("/:projectId/payments", authorizeRoles("admin"), addPayment);                                      // Add general payment
-router.delete("/:projectId/payments/:paymentId", authorizeRoles("admin"), deletePayment);                      // Delete payment
-router.post("/:projectId/milestones/:milestoneId/payments", authorizeRoles("admin"), addMilestonePayment);     // Add milestone payment
+// ========================================
+// ROLE-SPECIFIC PROJECT ACCESS ROUTES
+// ========================================
+router.get("/available", authorizeRoles("teamlead"), getAvailableProjects);
+router.get("/mine", authorizeRoles("teamlead", "employee"), getMyProjects);
+router.get("/assigned", authorizeRoles("employee"), getAssignedProjects);
 
-// -------------------------
-// Milestones
-// -------------------------
-router.delete("/:projectId/milestones/:milestoneId", authorizeRoles("admin"), deleteMilestone);                // Delete milestone
+// ========================================
+// PROJECT ACTIONS (TEAMLEAD SPECIFIC)
+// ========================================
+router.put("/:id/pick", authorizeRoles("teamlead"), pickProject);
+router.put("/:id/release", authorizeRoles("teamlead"), releaseProject);
 
-// -------------------------
-// Hourly Projects / Time Entries
-// -------------------------
-router.post("/:projectId/time-entries", addTimeEntry);                                                          // Add hourly/time entry
-router.delete("/:projectId/time-entries/:timeEntryId", authorizeRoles("admin", "teamlead"), deleteTimeEntry);   // Delete time entry
+// ========================================
+// PROJECT DETAILS ROUTES (SPECIFIC ROUTES)
+// ========================================
+router.post("/:projectId/details", authorizeRoles("admin"), addProjectDetails);
+router.get("/:projectId/details", authorizeRoles("admin", "teamlead"), getProjectDetails);
+router.put("/details/:detailId", authorizeRoles("admin"), updateProjectDetails);
+router.delete("/details/:detailId", authorizeRoles("admin"), deleteProjectDetails);
 
-// -------------------------
-// Client Status
-// -------------------------
-router.patch("/:projectId/client-status", authorizeRoles("admin", "teamlead"), updateClientStatus); // Accept/Reject/Review/Away
+// ========================================
+// PROJECT MANAGEMENT ROUTES
+// ========================================
+router.put("/:projectId/teamlead", authorizeRoles("admin"), assignTeamLead);
+router.put("/:projectId/employees", authorizeRoles("admin"), assignEmployees);
+router.patch("/:projectId/client-status", authorizeRoles("admin", "teamlead"), updateClientStatus);
+router.put("/:projectId/recalculate", authorizeRoles("admin"), recalculateProject);
+
+// ========================================
+// MILESTONE ROUTES
+// ========================================
+router.post("/:projectId/milestones", authorizeRoles("admin"), addMilestone);
+router.put("/:projectId/milestones/:milestoneId", authorizeRoles("admin"), updateMilestone);
+router.delete("/:projectId/milestones/:milestoneId", authorizeRoles("admin"), deleteMilestone);
+
+
+
+router.get("/employee/tasks", authorizeRoles("employee"), getEmployeeTasks);
+router.get("/employee/tasks/:taskId", authorizeRoles("employee"), getEmployeeTaskById);
+router.patch("/employee/tasks/:taskId/status", authorizeRoles("employee"), updateEmployeeTaskStatus);
+router.post("/employee/tasks/:taskId/response", authorizeRoles("employee"), addEmployeeTaskResponse);
+
+
+// ========================================
+// PAYMENT ROUTES
+// ========================================
+router.post("/:projectId/payments", authorizeRoles("admin"), addPayment);
+router.put("/:projectId/payments/:paymentId", authorizeRoles("admin"), updatePayment);
+router.delete("/:projectId/payments/:paymentId", authorizeRoles("admin"), deletePayment);
+router.post("/:projectId/milestones/:milestoneId/payments", authorizeRoles("admin"), addMilestonePayment);
+
+// ========================================
+// TIME ENTRY ROUTES (ADMIN + TEAMLEAD ACCESS)
+// ========================================
+router.post("/:projectId/time-entries", authorizeRoles("admin", "teamlead"), addTimeEntry);
+router.put("/:projectId/time-entries/:timeEntryId", authorizeRoles("admin", "teamlead"), updateTimeEntry);
+router.delete("/:projectId/time-entries/:timeEntryId", authorizeRoles("admin", "teamlead"), deleteTimeEntry);
+router.get("/employee/project/:projectId", authorizeRoles("employee"), getEmployeeProjectDetails);
+// ========================================
+// BASIC PROJECT CRUD (GENERIC ROUTES LAST)
+// ========================================
+router.post("/", authorizeRoles("admin"), addProject);
+router.get("/", authorizeRoles("admin", "teamlead"), getAllProjects);
+router.get("/:id", authorizeRoles("admin", "teamlead"), getProjectById);
+router.put("/:id", authorizeRoles("admin"), updateProject);
+router.delete("/:id", authorizeRoles("admin"), deleteProject);
 
 export default router;

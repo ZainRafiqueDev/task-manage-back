@@ -68,7 +68,8 @@ import {
 // Report functions
 import { 
   getReportsForAdmin,
-  createReport
+  createReport,
+    getUsersForReports
 } from "../controllers/reportController.js";
 
 // Fixed import: notification controller (note the typo fix)
@@ -313,5 +314,8 @@ router.get("/employees", authorizeRoles("admin", "teamlead"), getEmployees);
 
 // Assign team members (teamlead only)
 router.post("/assign-team", authorizeRoles("teamlead"), assignTeam);
+router.get("/admin/users", authorizeRoles("admin"), getUsersForReports);
+
 
 export default router;
+// Add after your existing routes
