@@ -11,18 +11,17 @@ import cookieParser from "cookie-parser";
 
 import connectDB from "./config/db.js";
 import { errorHandler } from "./middleware/errorHandler.js";
-import { logger } from "./utils/logger.js";
 
 // Routes
 import authRoutes from "./routes/authRoutes.js";
-import projectRoutes from "./routes/ProjectRoutes.js";
+import ProjectRoutes from "./routes/ProjectRoutes.js";
 import taskRoutes from "./routes/taskRoutes.js";
 import assetRoutes from "./routes/assetRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
 import teamLeadRoutes from "./routes/teamleadRoutes.js";
 import employeeRoutes from "./routes/employeeRoutes.js";
 import reportRoutes from "./routes/reportRoutes.js";
-import notifcationRoutes from "./routes/notifcationRoutes.js" // ✅ fixed spelling
+import notifcationRoutes from "./routes/notifcationRoutes.js"; // ✅ fixed spelling
 import userRoutes from "./routes/userRoutes.js";
 
 dotenv.config();
@@ -33,7 +32,6 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("API is running now..");
 });
-
 
 /* ---------------- MIDDLEWARE ---------------- */
 
@@ -82,11 +80,7 @@ app.use(compression());
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 } else {
-  app.use(
-    morgan("combined", {
-      stream: { write: (msg) => logger.info(msg.trim()) },
-    })
-  );
+  app.use(morgan("combined"));
 }
 
 /* ---------------- ROUTES ---------------- */
@@ -102,7 +96,7 @@ app.get("/api/health", (req, res) => {
 
 // API routes
 app.use("/api/auth", authRoutes);
-app.use("/api/projects", projectRoutes);
+app.use("/api/projects", ProjectRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/api/assets", assetRoutes);
 app.use("/api/admin", adminRoutes);
@@ -127,27 +121,24 @@ app.use(errorHandler);
 
 /* ---------------- GRACEFUL SHUTDOWN ---------------- */
 process.on("SIGTERM", () => {
-  logger.info("SIGTERM received, shutting down gracefully");
+  console.log("SIGTERM received, shutting down gracefully");
   process.exit(0);
 });
 
 process.on("SIGINT", () => {
-  logger.info("SIGINT received, shutting down gracefully");
+  console.log("SIGINT received, shutting down gracefully");
   process.exit(0);
 });
 
-process.on("unhandledRejection", (err) => {
-  logger.error("Unhandled Promise Rejection:", err);
-  process.exit(1);
-});
-
-
+// process.on("unhandledRejection", (err) => {
+//   console.error("Unhandled Promise Rejection:", err);
+//   process.exit(1);
+// });
 
 /* ---------------- START SERVER ---------------- */
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  logger.info(
-    `🚀 Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
+  console.log(
+    `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
   );
 });
-
