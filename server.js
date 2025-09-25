@@ -30,6 +30,10 @@ connectDB();
 
 const app = express();
 
+app.get("/", (req, res) => {
+  res.send("API is running...");
+})
+
 /* ---------------- MIDDLEWARE ---------------- */
 
 // CORS (must be before helmet)
@@ -135,6 +139,8 @@ process.on("unhandledRejection", (err) => {
   logger.error("Unhandled Promise Rejection:", err);
   process.exit(1);
 });
+
+
 
 /* ---------------- START SERVER ---------------- */
 const PORT = process.env.PORT || 5000;
