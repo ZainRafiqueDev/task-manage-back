@@ -1,6 +1,6 @@
 // routes/userRoutes.js
 import express from "express";
-import { protect, authorizeRoles } from "../middleware/authMiddleware.js";
+import { protect, authorizeRoles , requireTeamLead ,validateProjectOwnership} from "../middleware/authMiddleware.js";
 import {
   // User Management
   getAllUsers,
@@ -30,9 +30,14 @@ import {
 
   // Project Management
   getProjects,
-  getProjectsForTasks
+  getProjectsForTasks,
+ 
+  getEmployeeWorkloadSummary
 } from "../controllers/userController.js";
+import{
+     assignEmployeesToProject,
 
+}from "../controllers/ProjectController.js";
 const router = express.Router();
 
 // Protect all routes
@@ -47,6 +52,9 @@ router.put("/:id", authorizeRoles("admin"), updateUser);
 router.delete("/:id", authorizeRoles("admin"), deleteUser);
 router.patch("/:id/promote", authorizeRoles("admin"), promoteUser);
 router.get("/filtered", authorizeRoles("admin", "teamlead"), getAllUsersFiltered);
+router.get('/employees', protect, getAvailableEmployees);
+router.get('/employees/workload', protect, getEmployeeWorkloadSummary);
+ router.put('/:projectId/assign-employees', protect, requireTeamLead, validateProjectOwnership, assignEmployeesToProject);
 
 // ==========================
 // Employee Management Routes (Admin + TeamLead)

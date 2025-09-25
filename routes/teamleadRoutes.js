@@ -1,93 +1,100 @@
+// routes/teamLeadRoutes.js
 import express from "express";
 import { protect, authorizeRoles } from "../middleware/authMiddleware.js";
-
-// Project functions
 import {
-  getMyProjects,
+  // New functions for Team Task Management page
+  getProjectsWithTasks,
+  getTeamWithTasks,
+  getDashboardStats,
+  getEmployeesWithTaskStatus,
+  getTaskAssignmentOverview,
+  
+  // Existing functions
+  getVisibleProjects,
   pickProject,
-  getAvailableProjects,
-  releaseProject
-} from "../controllers/ProjectController.js";
-
-// Team / User functions
-import {
-  getAllUsersFiltered,
-  getEmployees,
-  assignTeam,
-  removeFromTeam,
-  getMyTeam
-} from "../controllers/userController.js";
-
-// Task functions
-import { assignTask, reassignTask, getMyAssignedTasks } from "../controllers/TaskController.js";
-
-// Report functions
-import { submitReport, getReportsForUser, reviewReport, addFeedback } from "../controllers/reportController.js";
-
-// Notification functions
-import { sendNotification, sendNotificationToEmployees } from "../controllers/notifcationController.js";
+  getMyProjects,
+  getTeamMembers,
+  assignTask,
+  reassignTask,
+  getMyAssignedTasks,
+  submitReport,
+  sendNotification,
+  getEmployeeReports,
+  reviewReport,
+  giveFeedback,
+  sendNotificationToEmployees
+} from "../controllers/teamLeadController.js";
 
 const router = express.Router();
 
-// Protect all routes and ensure only team leads can access
-router.use(protect, authorizeRoles("teamlead"));
+// Apply protection middleware to all routes
+router.use(protect);
+router.use(authorizeRoles("teamlead"));
 
-/* ----------------- PROJECTS ----------------- */
-// Get all available projects that teamleads can pick
-router.get("/projects/available", getAvailableProjects);
+/* ----------------------- TEAM TASK MANAGEMENT PAGE ROUTES ----------------------- */
 
-// Get projects assigned to the logged-in teamlead
-router.get("/projects/mine", getMyProjects);
+// Project Overview Tab
+router.get("/projects/overview", getProjectsWithTasks);
 
-// Alternative route for backward compatibility
-router.get("/projects", getAvailableProjects);
+// Team Management Tab
+router.get("/team/with-tasks", getTeamWithTasks);
+
+// Dashboard Statistics (for stats cards)
+router.get("/dashboard/stats", getDashboardStats);
+
+// Employee Management
+router.get("/employees/task-status", getEmployeesWithTaskStatus);
+
+// Task Assignment Overview
+router.get("/tasks/assignment-overview", getTaskAssignmentOverview);
+
+/* ----------------------- PROJECT MANAGEMENT ----------------------- */
+
+// Get all visible projects (limited view for unassigned projects)
+router.get("/projects/visible", getVisibleProjects);
 
 // Pick/claim a project
-router.put("/projects/:projectId/pick", pickProject);
+router.put("/projects/:id/pick", pickProject);
 
-// Release a project (give up ownership)
-router.put("/projects/:projectId/release", releaseProject);
+// Get projects assigned to this teamlead (full view)
+router.get("/projects/mine", getMyProjects);
 
-/* ----------------- TEAM MEMBERS ----------------- */
-// Get filtered users (teamlead sees only employees)
-router.get("/users", getAllUsersFiltered);
+/* ----------------------- TEAM MANAGEMENT ----------------------- */
 
-// Get employees list (all available employees)
-router.get("/employees", getEmployees);
+// Get team members (employees only)
+router.get("/team/members", getTeamMembers);
 
-// Get teamlead's own team members
-router.get("/my-team", getMyTeam);
+/* ----------------------- TASK MANAGEMENT ----------------------- */
 
-// Assign employees to teamlead's team
-router.post("/assign-team", assignTeam);
+// Assign task to employee
+router.post("/tasks/assign", assignTask);
 
-// Remove employees from teamlead's team
-router.post("/remove-team", removeFromTeam);
+// Reassign task to different employee
+router.put("/tasks/:id/reassign", reassignTask);
 
-/* ----------------- TASKS ----------------- */
-router.post("/tasks", assignTask);                       // Assign a new task
-router.put("/tasks/:id/reassign", reassignTask);         // Reassign an existing task
-router.get("/tasks/mine", getMyAssignedTasks);          // Tasks created by this team lead
+// Get tasks assigned by this teamlead
+router.get("/tasks/assigned", getMyAssignedTasks);
 
-/* ----------------- REPORTS ----------------- */
-router.post("/reports", submitReport);                   // Submit team lead's own report
-router.get("/reports/:employeeId", getReportsForUser); // View reports of a specific employee
-router.put("/reports/:reportId/review", reviewReport);  // Mark report as reviewed
-router.put("/reports/:reportId/feedback", addFeedback);// Give feedback separately
+/* ----------------------- REPORTING ----------------------- */
 
-/* ----------------- NOTIFICATIONS ----------------- */
-router.post("/notify", sendNotification);               // Notify a single admin/user
-router.post("/notify/employees", sendNotificationToEmployees); // Bulk notify employees
+// Submit report (daily/monthly)
+router.post("/reports", submitReport);
+
+// Review employee report
+router.put("/reports/:reportId/review", reviewReport);
+
+// Give feedback on report
+router.put("/reports/:reportId/feedback", giveFeedback);
+
+// View employee reports
+router.get("/employees/:employeeId/reports", getEmployeeReports);
+
+/* ----------------------- NOTIFICATIONS ----------------------- */
+
+// Send notification to admin or specific user
+router.post("/notifications/send", sendNotification);
+
+// Send notification to multiple employees
+router.post("/notifications/broadcast", sendNotificationToEmployees);
 
 export default router;
-
-// In TeamLeadProjectsTab.js
-
-
-
-// In TeamLeadProjectsTab.js
-
-
-
-
-

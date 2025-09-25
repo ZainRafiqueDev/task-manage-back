@@ -13,6 +13,7 @@ import {
   submitReport,
   submitDailyReport,
   getUsersForReports,
+  submitToHierarchy
 } from "../controllers/reportController.js";
 import { protect, authorizeRoles } from "../middleware/authMiddleware.js";
 
@@ -66,6 +67,12 @@ router.post(
   submitReport
 ); // Submit report to next level
 
+// Add this route after your existing routes
+router.post(
+  "/:reportId/submit-to-hierarchy",
+  authorizeRoles("employee", "teamlead"),
+  submitToHierarchy
+); // Submit report up the hierarchy chain
 
 router.get("/admin", authorizeRoles("admin"), getReportsForAdmin); // Get all reports (with filters)
 

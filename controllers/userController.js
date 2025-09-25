@@ -840,3 +840,118 @@ export const fetchEmployeesData = async (req, res) => {
     });
   }
 };
+
+
+/**
+ * @desc Get employee workload summary for team leads
+ * @route GET /api/users/employees/workload
+ * @access Private (Team Lead)
+ */
+export const getEmployeeWorkloadSummary = async (req, res) => {
+  try {
+    if (req.user.role !== "teamlead") {
+      return res.status(403).json({ 
+        success: false, 
+        message: "Only team leads can access employee workload data" 
+      });
+    }
+
+    // Get workload statistics
+    const workloadStats = await User.aggregate([
+      {
+        $match: { 
+          role: 'employee',
+          isActive: { $ne: false }
+        }
+      },
+      {
+        $lookup: {
+          from: 'projects',
+          let: { employeeId: '$_id' },
+          pipeline: [
+            {
+              $match: {
+                $expr: { $in: ['$$employeeId', '$employees'] },
+                status: { $in: ['pending', 'in-progress', 'active'] }
+              }
+            }
+          ],
+          as: 'activeProjects'
+        }
+      },
+      {
+        $lookup: {
+          from: 'tasks',
+          let: { employeeId: '$_id' },
+          pipeline: [
+            {
+              $match: {
+                $expr: { $eq: ['$assignedTo', '$$employeeId'] },
+                status: { $in: ['pending', 'in-progress'] }
+              }
+            }
+          ],
+          as: 'activeTasks'
+        }
+      },
+      {
+        $addFields: {
+          activeProjectCount: { $size: '$activeProjects' },
+          activeTaskCount: { $size: '$activeTasks' },
+          workloadLevel: {
+            $switch: {
+              branches: [
+                { case: { $lte: [{ $size: '$activeProjects' }, 1] }, then: 'light' },
+                { case: { $lte: [{ $size: '$activeProjects' }, 2] }, then: 'moderate' },
+                { case: { $lte: [{ $size: '$activeProjects' }, 3] }, then: 'heavy' }
+              ],
+              default: 'overloaded'
+            }
+          }
+        }
+      },
+      {
+        $project: {
+          name: 1,
+          firstName: 1,
+          lastName: 1,
+          email: 1,
+          activeProjectCount: 1,
+          activeTaskCount: 1,
+          workloadLevel: 1
+        }
+      },
+      {
+        $sort: { activeProjectCount: 1, name: 1 }
+      }
+    ]);
+
+    const summary = {
+      totalEmployees: workloadStats.length,
+      workloadDistribution: {
+        light: workloadStats.filter(emp => emp.workloadLevel === 'light').length,
+        moderate: workloadStats.filter(emp => emp.workloadLevel === 'moderate').length,
+        heavy: workloadStats.filter(emp => emp.workloadLevel === 'heavy').length,
+        overloaded: workloadStats.filter(emp => emp.workloadLevel === 'overloaded').length
+      },
+      averageProjectsPerEmployee: workloadStats.length > 0 ? 
+        Math.round((workloadStats.reduce((sum, emp) => sum + emp.activeProjectCount, 0) / workloadStats.length) * 10) / 10 : 0,
+      averageTasksPerEmployee: workloadStats.length > 0 ? 
+        Math.round((workloadStats.reduce((sum, emp) => sum + emp.activeTaskCount, 0) / workloadStats.length) * 10) / 10 : 0
+    };
+
+    res.status(200).json({
+      success: true,
+      summary,
+      employees: workloadStats
+    });
+
+  } catch (error) {
+    console.error("Get employee workload summary error:", error);
+    res.status(500).json({
+      success: false,
+      message: "Error fetching employee workload summary",
+      error: error.message
+    });
+  }
+};
