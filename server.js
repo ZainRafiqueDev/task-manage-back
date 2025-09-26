@@ -36,15 +36,15 @@ app.get("/", (req, res) => {
 /* ---------------- MIDDLEWARE ---------------- */
 
 // CORS (must be before helmet)
-app.use(
-  cors({
-    origin:
-      process.env.NODE_ENV === "production"
-        ? process.env.FRONTEND_URL
-        : "http://localhost:5173",
-    credentials: true, // ✅ allow cookies
-  })
-);
+import cors from "cors";
+
+app.use(cors({
+  origin: process.env.NODE_ENV === "production"
+    ? process.env.FRONTEND_URL   // 👈 from env
+    : "http://localhost:5173",
+  credentials: true, // 👈 allow cookies
+}));
+
 
 // Helmet (disable CSP in dev for localhost)
 app.use(
@@ -142,3 +142,4 @@ app.listen(PORT, () => {
     `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
   );
 });
+
