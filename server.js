@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
 /* ---------------- MIDDLEWARE ---------------- */
 
 // CORS (must be before helmet)
-import cors from "cors";
+
 
 app.use(cors({
   origin: process.env.NODE_ENV === "production"
@@ -142,4 +142,5 @@ app.listen(PORT, () => {
     `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
   );
 });
+
 
