@@ -39,10 +39,10 @@ app.get("/", (req, res) => {
 
 
 app.use(cors({
-  origin: process.env.NODE_ENV === "production"
-    ? process.env.FRONTEND_URL   // 👈 from env
-    : "http://localhost:5173",
-  credentials: true, // 👈 allow cookies
+  origin: 'https://task-manage-front-lh42.vercel.app',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 
@@ -142,5 +142,6 @@ app.listen(PORT, () => {
     `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
   );
 });
+
 
 
